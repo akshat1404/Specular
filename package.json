@@ -8,6 +8,7 @@
     "report": "npm run build && node dist/src/cli.js",
     "validate": "npm run build && node dist/src/validate.js",
     "audit": "npm run build && node dist/src/audit.js",
+    "summary-pdf": "npm run build && node dist/src/summaryPdf.js",
     "test": "vitest run",
     "test:watch": "vitest"
   },
