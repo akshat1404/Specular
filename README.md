@@ -54,9 +54,13 @@ src/
   report/report.ts           JSON + markdown report writer (Level 2, gitignored output)
   report/overlay.ts          deviation + accessibility box overlay: humanized tooltips, per-finding-kind color coding
   runCrawlTarget.ts          shared crawl -> score -> report driver, used by both validate.ts and audit.ts
+  summary/rank.ts            cross-category top-3 finding selection for the one-page PDF summary
+  summary/render.ts          one-page summary HTML template + CSS-cropped screenshot thumbnails
+  summary/pdf.ts             renders + exports the summary via Playwright's page.pdf()
   pipeline.ts                Level 1 orchestrator: spec -> extract -> match -> aggregate
   validate.ts                Level 2 CLI: registry target (spec via adapter) -> crawl -> match -> aggregate -> report
   audit.ts                   generic CLI: your own TokenSpec + URLs, no registry entry required: see "Try it on your own site" below
+  summaryPdf.ts               CLI: reports/<key>/report.json -> one-page PDF, see "One-page PDF summary" below
   cli.ts                     Level 1 CLI: runs pipeline against the synthetic fixtures
 fixtures/                    synthetic compliant/deviant HTML + token spec
 test/                        unit tests + end-to-end pipeline test
@@ -94,6 +98,28 @@ guarantee of being a clean baseline the way this project's four hand-verified on
 targets are); `--refresh` bypasses the cache, same as `validate`. Output lands in
 `reports/<key>/`: the same `report.json`/`summary.md`/`report.html`, overlay, and
 accessibility findings every registered target gets, from the exact same pipeline.
+
+## One-page PDF summary
+
+`report.html` is diagnostic tooling: dark theme, tables, raw counts, built for someone
+about to go fix code. A one-page PDF is a different deliverable for a different reader:
+someone deciding whether to care in the first place. It's a deliberately separate,
+explicit step, not something every `validate`/`audit` run produces automatically:
+
+```
+npm run summary-pdf -- --target=<key>
+```
+
+Reads the already-written `reports/<key>/report.json` and cached screenshots (works
+identically whether that target came from the registry or from `audit`; run `validate`
+or `audit` for that target first if `report.json` doesn't exist yet) and writes
+`reports/<key>/summary.pdf`: the two headline numbers (deviation score, passing WCAG
+contrast checks), and the top 3 findings ranked across *both* categories by a documented
+impact heuristic (severity boosted by occurrence count/page spread/bounding-box area,
+with accessibility findings weighted higher than a similarly-ranked deviation — see
+`summary/rank.ts`), each as one plain-English sentence with a small cropped-screenshot
+thumbnail where position data allows it. Rendered via Playwright's own `page.pdf()`, no
+separate PDF library.
 
 ## Status
 
