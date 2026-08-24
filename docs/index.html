@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Specular — a lint check for design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Specular measures how far a product's rendered UI has drifted from its own design-token spec, using real browser extraction rather than screenshots.">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --bg-alt: #f2efe9;
+    --ink: #1c1a17;
+    --ink-soft: #55504a;
+    --border: #e1dcd2;
+    --accent: #b5432a;
+    --accent-soft: #f4e3dc;
+    --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+  }
+
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header.hero {
+    padding: 96px 0 64px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.12;
+    margin: 0 0 24px;
+    letter-spacing: -0.01em;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 28px;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+
+  .btn.primary {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .btn.primary:hover { background: #000; }
+
+  .btn.secondary {
+    border-color: var(--border);
+    color: var(--ink);
+  }
+  .btn.secondary:hover { border-color: var(--ink); }
+
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section h2 {
+    font-family: var(--serif);
+    font-size: 26px;
+    margin: 0 0 20px;
+  }
+
+  section p {
+    color: var(--ink-soft);
+    max-width: 68ch;
+  }
+
+  .method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+  }
+
+  .method-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+
+  .method-card .num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+  }
+
+  .method-card h3 {
+    font-size: 16px;
+    margin: 8px 0 8px;
+  }
+
+  .method-card p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--ink-soft);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 14.5px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+
+  td.kind {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  td.score {
+    font-family: var(--mono);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .score.low { color: #2e7d4f; }
+  .score.mid { color: var(--accent); }
+  .score.flag { color: var(--ink-soft); font-weight: 500; }
+
+  .row-group {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 13px;
+    padding-top: 20px;
+    border-bottom: none;
+  }
+
+  code {
+    font-family: var(--mono);
+    background: var(--bg-alt);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 40px 0 80px;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+
+  footer a { color: var(--ink); }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17140f;
+      --bg-alt: #211d17;
+      --ink: #f2ede4;
+      --ink-soft: #b3aa9c;
+      --border: #37312a;
+      --accent: #e0693f;
+      --accent-soft: #3a241c;
+    }
+    .btn.primary { color: #17140f; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="hero">
+      <p class="kicker">Specular</p>
+      <h1>A lint check for design.</h1>
+      <p class="lede">
+        Most companies build one design system and end up with five products that
+        don't look like they belong to it. Specular measures that gap directly —
+        not from screenshots, but from what the browser actually rendered.
+      </p>
+      <div class="hero-links">
+        <a class="btn primary" href="#reports">See the reports</a>
+        <a class="btn secondary" href="https://github.com/akshat1404/Specular">View on GitHub</a>
+      </div>
+    </header>
+
+    <section id="what">
+      <h2>What it does</h2>
+      <p>
+        A design system publishes a spec: a fixed palette of colors, a spacing
+        scale, a type scale, a small set of approved fonts. Over time, real
+        products drift from it — a marketing page ships an off-brand red, a
+        legacy screen never got the new font, a component reaches for a
+        spacing value that isn't actually on the scale. Nobody notices because
+        nobody's checking every pixel by hand, and the drift is usually too
+        subtle to catch by eye anyway.
+      </p>
+      <p>
+        Specular checks by machine instead. It headlessly loads a real page,
+        reads the browser's own <code>getComputedStyle()</code> for every
+        visible element — the literal value used to paint the pixel, after
+        CSS cascade, theming, and runtime JS have all resolved — and compares
+        it against the company's own published design tokens. The output is a
+        single 0–100 deviation score per product, plus the specific elements
+        and properties responsible for it.
+      </p>
+    </section>
+
+    <section id="method">
+      <h2>How it measures</h2>
+      <p>Four checks, run independently and rolled up together — no single property type can drown out another.</p>
+      <div class="method-grid">
+        <div class="method-card">
+          <p class="num">01 · color</p>
+          <h3>Delta-E distance</h3>
+          <p>CIEDE2000 distance in Lab space against the spec's palette. Alpha- and theme-variant aware, so a translucent or dark-mode variant of a real token doesn't score as unrelated drift.</p>
+        </div>
+        <div class="method-card">
+          <p class="num">02 · scale</p>
+          <h3>Spacing, radius, type size</h3>
+          <p>Distance to the nearest value actually defined on the spec's scale — not "is this a round number," but "is this a number this design system uses."</p>
+        </div>
+        <div class="method-card">
+          <p class="num">03 · type</p>
+          <h3>Font family &amp; weight</h3>
+          <p>Categorical match on the resolved font stack, with weight checked as a secondary numeric signal.</p>
+        </div>
+        <div class="method-card">
+          <p class="num">04 · access</p>
+          <h3>WCAG contrast</h3>
+          <p>A separate, parallel category — not folded into the score above. Every sampled text element gets its real effective background resolved and checked against WCAG 2.1 AA/AAA. On-spec and accessible are different questions; a page can pass one and fail the other.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reports">
+      <h2>Validated targets</h2>
+      <p>
+        Five public design systems, each paired against the pages that actually
+        use them — a company's own docs site (should score near-zero) alongside
+        its real consumer product (where drift actually shows up). Full reports
+        below.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Target</th><th>Kind</th><th>Score</th></tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3" class="row-group">GitHub</td></tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/github/report.html">github.com</a></td>
+            <td class="kind">real-app</td>
+            <td class="score mid">5.3</td>
+          </tr>
+
+          <tr><td colspan="3" class="row-group">IBM Carbon</td></tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/carbon-onspec/report.html">carbondesignsystem.com</a></td>
+            <td class="kind">on-spec</td>
+            <td class="score low">1.8</td>
+          </tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/ibm-real-app/report.html">ibm.com</a></td>
+            <td class="kind">real-app</td>
+            <td class="score low">2.0</td>
+          </tr>
+
+          <tr><td colspan="3" class="row-group">Atlassian</td></tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/atlassian-onspec/report.html">atlassian.design</a></td>
+            <td class="kind">on-spec</td>
+            <td class="score low">1.9</td>
+          </tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/jira-real-app/report.html">jira.atlassian.com</a></td>
+            <td class="kind">real-app</td>
+            <td class="score mid">18.3</td>
+          </tr>
+
+          <tr><td colspan="3" class="row-group">Shopify Polaris</td></tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/polaris-onspec/report.html">shopify.dev</a></td>
+            <td class="kind">on-spec, unverified*</td>
+            <td class="score flag">15.5</td>
+          </tr>
+
+          <tr><td colspan="3" class="row-group">Pinterest Gestalt</td></tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/pinterest-onspec/report.html">gestalt.pinterest.systems</a></td>
+            <td class="kind">on-spec</td>
+            <td class="score low">3.7</td>
+          </tr>
+          <tr>
+            <td><a href="https://htmlpreview.github.io/?https://github.com/akshat1404/Specular/blob/main/reports/pinterest-real-app/report.html">business.pinterest.com</a></td>
+            <td class="kind">real-app</td>
+            <td class="score mid">12.3</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size: 13px; margin-top: 16px;">
+        * No publicly reachable shopify.dev/polaris.shopify.com page was found to render
+        actual Polaris components at the time of this check — this score reflects a
+        generic docs shell, not a verified Polaris baseline. See the
+        <a href="https://github.com/akshat1404/Specular#status">full status table</a>
+        for the reasoning and every other target's notable findings.
+      </p>
+    </section>
+
+    <section id="try" style="border-bottom: none;">
+      <h2>Try it yourself</h2>
+      <p>
+        Specular ships as a CLI. Point it at any live URL and it'll extract, score,
+        and write out a report — no design-token spec required to just look at what
+        gets sampled.
+      </p>
+      <p><code>npx tsx src/audit.ts --url=https://example.com</code></p>
+      <p>
+        Full setup, the token-adapter pattern for adding a new company, and the
+        underlying design rationale are in the
+        <a href="https://github.com/akshat1404/Specular">GitHub repository</a>.
+      </p>
+    </section>
+
+    <footer>
+      <a href="https://github.com/akshat1404/Specular">github.com/akshat1404/Specular</a>
+    </footer>
+  </div>
+
+</body>
+</html>
