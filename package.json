@@ -21,6 +21,7 @@
     "@primer/primitives": "^11.10.0",
     "@shopify/polaris-tokens": "^9.4.2",
     "@types/node": "^20.14.0",
+    "gestalt-design-tokens": "^177.0.12",
     "playwright": "^1.47.0",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
