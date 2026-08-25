@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Jira (jira.atlassian.com) - design drift report</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 24px; border-bottom: 1px solid #333; }
+  h1 { margin: 0 0 8px; }
+  .score { font-size: 1.2em; }
+  main { padding: 24px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
+  th, td { border: 1px solid #333; padding: 6px 10px; text-align: left; font-size: 13px; vertical-align: top; }
+  th { background: #222; }
+  .unverified-banner { margin: 16px 24px 0; padding: 12px 16px; background: #4a2e00; border: 2px solid #d9822b; border-radius: 4px; color: #ffd8a8; font-size: 14px; }
+  .a11y-note { color: #999; font-size: 13px; max-width: 70ch; }
+  section.pages ul { padding-left: 20px; }
+  section.pages li { margin-bottom: 6px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+</style>
+</head>
+<body>
+<nav><a href="../../index.html">Specular</a> / Jira (jira.atlassian.com)</nav>
+<header>
+<h1>Jira (jira.atlassian.com) (real-app)</h1>
+<div class="score">Score: 18.3 / 100 — 0 is fully on-spec, 100 is maximally deviant.</div>
+</header>
+
+<main>
+<h2>Breakdown by property</h2>
+<table><thead><tr><th>property</th><th>mean deviation</th><th>n</th></tr></thead><tbody>
+<tr><td>font-family</td><td>0.74</td><td>101</td></tr>
+<tr><td>border-radius</td><td>0.16</td><td>101</td></tr>
+<tr><td>color</td><td>0.14</td><td>101</td></tr>
+<tr><td>border-color</td><td>0.13</td><td>6</td></tr>
+<tr><td>spacing</td><td>0.09</td><td>808</td></tr>
+<tr><td>font-weight</td><td>0.04</td><td>101</td></tr>
+<tr><td>background-color</td><td>0.02</td><td>24</td></tr>
+<tr><td>font-size</td><td>0.01</td><td>101</td></tr>
+</tbody></table>
+<h2>Accessibility — WCAG contrast</h2>
+<p class="a11y-note">Separate from the deviation score above: this checks captured text against WCAG 2.1's own contrast thresholds, independent of the brand spec — an element can be on-spec and still fail contrast, or off-spec and still pass.</p>
+<p>Checked: 73, passing: 73, failing: 0</p>
+<table><thead><tr><th>finding</th><th>page</th><th>component</th><th>ratio</th><th>level</th><th>spec-token fix</th></tr></thead><tbody>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/</td><td>span/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>button/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>button/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>button/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>5.2:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.2:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>span/text</td><td>7.2:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.2:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>span/text</td><td>7.2:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.2:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>span/text</td><td>7.2:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.7:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>li/text</td><td>7.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.7:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>li/text</td><td>7.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.7:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>li/text</td><td>7.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.8:1</td><td>https://jira.atlassian.com/</td><td>div/text</td><td>7.8:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.9:1</td><td>https://jira.atlassian.com/</td><td>div/text</td><td>7.9:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 7.9:1</td><td>https://jira.atlassian.com/</td><td>div/text</td><td>7.9:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>span/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>span/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>span/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 13.3:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>a/text</td><td>13.3:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 13.3:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>a/text</td><td>13.3:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 13.3:1</td><td>https://jira.atlassian.com/projects/JSWCLOUD/summary</td><td>a/text</td><td>13.3:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 13.4:1</td><td>https://jira.atlassian.com/</td><td>span/text</td><td>13.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>section/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>span/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>iframe/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>dt/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>dt/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/JRACLOUD/summary</td><td>dd/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>section/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>span/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>h3/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 14.1:1</td><td>https://jira.atlassian.com/projects/CONFCLOUD/summary</td><td>p/text</td><td>14.1:1</td><td>AAA</td><td>—</td></tr>
+</tbody></table>
+<section class="pages">
+<h2>Pages</h2>
+<ul>
+<li><a href="jira-atlassian-com-fce3a307/index.html">https://jira.atlassian.com/</a> — score 6.6</li>
+<li><a href="jira-atlassian-com-projects-JRACLOUD-summary-41375c9b/index.html">https://jira.atlassian.com/projects/JRACLOUD/summary</a> — score 22.9</li>
+<li><a href="jira-atlassian-com-projects-CONFCLOUD-summary-17d837f4/index.html">https://jira.atlassian.com/projects/CONFCLOUD/summary</a> — score 21.5</li>
+<li><a href="jira-atlassian-com-projects-JSWCLOUD-summary-0e9f5c04/index.html">https://jira.atlassian.com/projects/JSWCLOUD/summary</a> — score 22.3</li>
+</ul>
+</section>
+</main>
+</body>
+</html>
