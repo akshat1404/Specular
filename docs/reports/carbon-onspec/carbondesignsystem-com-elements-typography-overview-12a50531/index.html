@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>https://carbondesignsystem.com/elements/typography/overview/ - Carbon Design System (carbondesignsystem.com)</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 16px 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.2em; word-break: break-all; }
+  .score { color: #ccc; font-size: 14px; }
+  .tabs { display: flex; gap: 4px; padding: 0 24px; border-bottom: 1px solid #333; }
+  .tab-btn { background: none; border: none; color: #999; padding: 10px 16px; cursor: pointer; font-size: 14px; border-bottom: 2px solid transparent; }
+  .tab-btn.active { color: #eee; border-bottom-color: #7aa2f7; }
+  .tab-panel { display: none; padding: 24px; overflow: auto; }
+  .tab-panel.active { display: block; }
+  .tab-panel img { max-width: 100%; display: block; }
+  .findings { padding: 0 24px 32px; }
+  .findings h2 { font-size: 1em; color: #ccc; }
+  .findings ul { padding-left: 20px; margin: 0 0 24px; }
+  .findings li { margin-bottom: 8px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+
+  .legend { position: sticky; top: 0; z-index: 10; background: #222; color: #eee; padding: 8px 12px; display: flex; gap: 16px; align-items: center; font-size: 13px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+  .count { margin-left: auto; color: #999; }
+  .stage { position: relative; display: inline-block; }
+  .stage img { display: block; max-width: none; }
+  .dev-box { position: absolute; border: 2px solid; background: rgba(255, 255, 255, 0.08); box-sizing: border-box; cursor: help; }
+
+</style>
+</head>
+<body>
+<nav><a href="../../../index.html">Specular</a> / <a href="../index.html">Carbon Design System (carbondesignsystem.com)</a> / this page</nav>
+<header>
+<h1>https://carbondesignsystem.com/elements/typography/overview/</h1>
+<div class="score">page score: 1.8 — 27 flagged deviations, 0 contrast failures</div>
+</header>
+<div class="tabs">
+  <button class="tab-btn active" data-tab="looks" type="button">What it looks like</button>
+  <button class="tab-btn" data-tab="should" type="button">What it should have been</button>
+</div>
+<div id="tab-looks" class="tab-panel active">
+<div class="legend">
+  <strong>https://carbondesignsystem.com/elements/typography/overview/</strong>
+  <span class="legend-item"><span class="swatch" style="background:#e53e3e"></span>color</span><span class="legend-item"><span class="swatch" style="background:#dd6b20"></span>spacing</span><span class="legend-item"><span class="swatch" style="background:#3182ce"></span>typography</span><span class="legend-item"><span class="swatch" style="background:#805ad5"></span>radius</span>
+  <span class="legend-item"><span class="swatch" style="background:#ecc94b"></span>accessibility (WCAG fail)</span>
+  <span class="count">3 deviations (score &gt; 15), 0 contrast failures</span>
+</div>
+<div class="stage">
+  <img src="original.png" alt="page screenshot">
+  <div class="dev-box" style="left:344px;top:1997.9375px;width:591.984375px;height:60px;border-color:#3182ce;" title="p/text #068ae999 — score 16.7
+font size is 48px, should be 42px
+using &quot;IBM Plex Serif&quot; instead of &quot;IBM Plex Sans Var&quot;
+font weight is 400, should be 400 (different than what's used)"></div>
+  <div class="dev-box" style="left:658.890625px;top:1444.09375px;width:40.171875px;height:18px;border-color:#805ad5;" title="code/text #ebdacd82 — score 15.6
+top-left corner radius is 4px, should be 0px"></div>
+  <div class="dev-box" style="left:454.984375px;top:1468.09375px;width:40.171875px;height:18px;border-color:#805ad5;" title="code/text #ebdacd82 — score 15.6
+top-left corner radius is 4px, should be 0px"></div>
+</div>
+</div>
+<div id="tab-should" class="tab-panel">
+<img src="corrected.png" alt="corrected render of https://carbondesignsystem.com/elements/typography/overview/">
+</div>
+<main class="findings">
+<h2>Flagged deviations on this page</h2>
+<ul>
+<li><strong>p/text</strong> #068ae999 — color is a different shade than the brand palette — closest match is colors.borderInverse, a gray (#161616)</li>
+<li><strong>p/text</strong> #068ae999 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — font size is 48px, should be 42px</li>
+<li><strong>p/text</strong> #068ae999 — using &quot;IBM Plex Serif&quot; instead of &quot;IBM Plex Sans Var&quot;</li>
+<li><strong>p/text</strong> #068ae999 — font weight is 400, should be 400 (different than what's used)</li>
+<li><strong>p/text</strong> #068ae999 — padding-top is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — padding-right is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — padding-bottom is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — padding-left is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — margin-top is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — margin-right is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — margin-bottom is 0px, should be 0px</li>
+<li><strong>p/text</strong> #068ae999 — margin-left is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — color is a different shade than the brand palette — closest match is colors.borderInverse, a gray (#161616)</li>
+<li><strong>code/text</strong> #ebdacd82 — background color is a different shade than the brand palette — closest match is colors.borderSubtle00, a gray (#e0e0e0)</li>
+<li><strong>code/text</strong> #ebdacd82 — top-left corner radius is 4px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — font size is 14px, should be 14px</li>
+<li><strong>code/text</strong> #ebdacd82 — using &quot;IBM Plex Mono&quot; instead of &quot;IBM Plex Mono&quot;</li>
+<li><strong>code/text</strong> #ebdacd82 — font weight is 400, should be 400 (different than what's used)</li>
+<li><strong>code/text</strong> #ebdacd82 — padding-top is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — padding-right is 7px, should be 8px</li>
+<li><strong>code/text</strong> #ebdacd82 — padding-bottom is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — padding-left is 7px, should be 8px</li>
+<li><strong>code/text</strong> #ebdacd82 — margin-top is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — margin-right is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — margin-bottom is 0px, should be 0px</li>
+<li><strong>code/text</strong> #ebdacd82 — margin-left is 0px, should be 0px</li>
+</ul>
+<h2>Contrast failures on this page</h2>
+<p class="empty">No contrast failures on this page.</p>
+</main>
+<script>
+document.querySelectorAll(".tab-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+    document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.remove("active"); });
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
