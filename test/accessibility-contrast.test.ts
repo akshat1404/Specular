@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { checkElementAccessibility, classifyContrast, isLargeText } from "../src/accessibility/contrast.js";
+import { checkElementAccessibility, classifyContrast, correctedContrast, isLargeText } from "../src/accessibility/contrast.js";
 import { validateTokenSpec, type TokenSpec } from "../src/schema/tokenSpec.js";
 import type { CapturedStyles, ExtractedElement } from "../src/extractor/types.js";
 import type { PropertyDeviation } from "../src/matchers/types.js";
@@ -152,5 +152,53 @@ describe("checkElementAccessibility", () => {
     };
     const finding = checkElementAccessibility(el, "page-1", [spacingDeviation], spec)!;
     expect(finding.tieIn).toBeUndefined();
+  });
+});
+
+describe("correctedContrast", () => {
+  it("reports the corrected color/background against each other, not the captured values", () => {
+    const colorDeviation: PropertyDeviation = {
+      property: "color",
+      rawValue: "rgb(200, 200, 200)",
+      nearestToken: "colors.brand-text", // resolves to #111111
+      distance: 40,
+      normalized: 0.9,
+    };
+    const result = correctedContrast([colorDeviation], "rgb(200, 200, 200)", "rgb(255, 255, 255)", false, spec);
+    expect(result.level).not.toBe("fail");
+    expect(result.ratio).toBeGreaterThan(4.5);
+  });
+
+  it("falls back to the captured color when there's no color deviation to correct, only a background-color one", () => {
+    const bgDeviation: PropertyDeviation = {
+      property: "background-color",
+      rawValue: "rgb(240, 240, 240)",
+      nearestToken: "colors.surface", // resolves to #FFFFFF, same as captured — no real change
+      distance: 5,
+      normalized: 0.1,
+    };
+    const result = correctedContrast([bgDeviation], "rgb(17, 17, 17)", "rgb(240, 240, 240)", false, spec);
+    // corrected background is white (from the token), text color untouched (near-black) — still a strong pass.
+    expect(result.level).toBe("AAA");
+  });
+
+  it("stays at fail when the nearest color token doesn't actually clear the threshold against the effective background", () => {
+    const lowContrastSpec: TokenSpec = validateTokenSpec({
+      colors: { "brand-light-gray": "#CCCCCC" },
+      spacing: [0],
+      radius: [0],
+      fontSize: [16],
+      fontFamily: ["Arial"],
+      fontWeight: [400],
+    });
+    const colorDeviation: PropertyDeviation = {
+      property: "color",
+      rawValue: "rgb(200, 200, 200)",
+      nearestToken: "colors.brand-light-gray",
+      distance: 1,
+      normalized: 0.1,
+    };
+    const result = correctedContrast([colorDeviation], "rgb(200, 200, 200)", "rgb(255, 255, 255)", false, lowContrastSpec);
+    expect(result.level).toBe("fail");
   });
 });

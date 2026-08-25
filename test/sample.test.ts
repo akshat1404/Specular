@@ -193,4 +193,88 @@ describe("buildCorrections", () => {
     const corrections = buildCorrections([many], spec);
     expect(Object.keys(corrections)).toHaveLength(1);
   });
+
+  describe("contrast-aware color correction", () => {
+    const CONTRAST_STYLES: CapturedStyles = {
+      color: "rgb(200, 200, 200)",
+      backgroundColor: "rgba(0, 0, 0, 0)",
+      borderTopColor: "rgba(0, 0, 0, 0)",
+      borderTopWidth: "0px",
+      borderTopStyle: "none",
+      borderTopLeftRadius: "0px",
+      fontSize: "16px",
+      fontFamily: "Arial",
+      fontWeight: "400",
+      paddingTop: "0px",
+      paddingRight: "0px",
+      paddingBottom: "0px",
+      paddingLeft: "0px",
+      marginTop: "0px",
+      marginRight: "0px",
+      marginBottom: "0px",
+      marginLeft: "0px",
+      effectiveBackgroundColor: "rgb(255, 255, 255)",
+      effectiveBackgroundResolved: true,
+    };
+
+    function textElement(overrides: Partial<CapturedStyles> = {}): ExtractedElement {
+      return { component: "span/text", instanceId: "a11y-inst", styles: { ...CONTRAST_STYLES, ...overrides }, positions: [{ x: 0, y: 0, width: 10, height: 10 }] };
+    }
+
+    it("skips a color correction whose nearest token still fails the same accessibility contrast check the captured color already failed, rather than silently presenting a broken fix", () => {
+      // rgb(200,200,200) on white already fails AA; the spec's only color is
+      // another light gray, so the matcher's Delta-E-nearest pick still fails.
+      const lowContrastSpec: TokenSpec = validateTokenSpec({
+        colors: { "brand-light-gray": "#CCCCCC" },
+        spacing: [0],
+        radius: [0],
+        fontSize: [16],
+        fontFamily: ["Arial"],
+        fontWeight: [400],
+      });
+
+      const el = textElement();
+      const corrections = buildCorrections([el], lowContrastSpec);
+      const fix = corrections[`${el.component}|${JSON.stringify(el.styles)}`];
+
+      expect(fix?.color).toBeUndefined();
+    });
+
+    it("still applies a color correction whose nearest token actually resolves the contrast failure", () => {
+      // Same captured light-gray-on-white failure, but this spec's nearest
+      // color is a near-black — a genuine fix, not just a Delta-E-nearest
+      // pick that happens to also be unreadable.
+      const fixingSpec: TokenSpec = validateTokenSpec({
+        colors: { "brand-dark": "#111111" },
+        spacing: [0],
+        radius: [0],
+        fontSize: [16],
+        fontFamily: ["Arial"],
+        fontWeight: [400],
+      });
+
+      const el = textElement();
+      const corrections = buildCorrections([el], fixingSpec);
+      const fix = corrections[`${el.component}|${JSON.stringify(el.styles)}`];
+
+      expect(fix?.color).toBe("#111111");
+    });
+
+    it("does not gate on contrast at all for an element with no effectiveBackgroundColor (nothing the accessibility pass checked)", () => {
+      const lowContrastSpec: TokenSpec = validateTokenSpec({
+        colors: { "brand-light-gray": "#CCCCCC" },
+        spacing: [0],
+        radius: [0],
+        fontSize: [16],
+        fontFamily: ["Arial"],
+        fontWeight: [400],
+      });
+
+      const el = textElement({ effectiveBackgroundColor: undefined, effectiveBackgroundResolved: undefined });
+      const corrections = buildCorrections([el], lowContrastSpec);
+      const fix = corrections[`${el.component}|${JSON.stringify(el.styles)}`];
+
+      expect(fix?.color).toBe("#CCCCCC");
+    });
+  });
 });
