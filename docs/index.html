@@ -228,9 +228,11 @@
       <p class="kicker">Specular</p>
       <h1>A lint check for design.</h1>
       <p class="lede">
-        Most companies build one design system and end up with five products that
-        don't look like they belong to it. Specular measures that gap directly —
-        not from screenshots, but from what the browser actually rendered.
+        A design system is supposed to keep a company's products looking like
+        they belong together. In practice, products drift from it pixel by
+        pixel, more than anyone's checking by eye. Specular measures that gap
+        directly: not from screenshots, but from what the browser actually
+        rendered.
       </p>
       <div class="hero-links">
         <a class="btn primary" href="#reports">See the reports</a>
@@ -242,19 +244,19 @@
       <h2>What it does</h2>
       <p>
         A design system publishes a spec: a fixed palette of colors, a spacing
-        scale, a type scale, a small set of approved fonts. Over time, real
-        products drift from it — a marketing page ships an off-brand red, a
+        scale, a type scale, a small set of approved fonts. Real products
+        drift from it anyway. A marketing page ships an off-brand red, a
         legacy screen never got the new font, a component reaches for a
-        spacing value that isn't actually on the scale. Nobody notices because
-        nobody's checking every pixel by hand, and the drift is usually too
-        subtle to catch by eye anyway.
+        spacing value that isn't actually on the scale. Each deviation is
+        small enough on its own, a few pixels, a few hex digits, to pass a
+        design review unnoticed.
       </p>
       <p>
         Specular checks by machine instead. It headlessly loads a real page,
         reads the browser's own <code>getComputedStyle()</code> for every
-        visible element — the literal value used to paint the pixel, after
-        CSS cascade, theming, and runtime JS have all resolved — and compares
-        it against the company's own published design tokens. The output is a
+        visible element (the literal value used to paint the pixel, after CSS
+        cascade, theming, and runtime JS have all resolved), and compares it
+        against the company's own published design tokens. The output is a
         single 0–100 deviation score per product, plus the specific elements
         and properties responsible for it.
       </p>
@@ -262,7 +264,7 @@
 
     <section id="method">
       <h2>How it measures</h2>
-      <p>Four checks, run independently and rolled up together — no single property type can drown out another.</p>
+      <p>Four checks, run independently and rolled up together: no single property type can drown out another.</p>
       <div class="method-grid">
         <div class="method-card">
           <p class="num">01 · color</p>
@@ -291,7 +293,7 @@
       <h2>Validated targets</h2>
       <p>
         Five public design systems, each paired against the pages that actually
-        use them — a company's own docs site (should score near-zero) alongside
+        use them: a company's own docs site (should score near-zero) alongside
         its real consumer product (where drift actually shows up). Full reports
         below.
       </p>
@@ -353,7 +355,7 @@
       </table>
       <p style="font-size: 13px; margin-top: 16px;">
         * No publicly reachable shopify.dev/polaris.shopify.com page was found to render
-        actual Polaris components at the time of this check — this score reflects a
+        actual Polaris components at the time of this check: this score reflects a
         generic docs shell, not a verified Polaris baseline. See the
         <a href="https://github.com/akshat1404/Specular#status">full status table</a>
         for the reasoning and every other target's notable findings.
@@ -364,7 +366,7 @@
       <h2>Try it yourself</h2>
       <p>
         Specular ships as a CLI. Point it at any live URL and it'll extract, score,
-        and write out a report — no design-token spec required to just look at what
+        and write out a report; no design-token spec required to just look at what
         gets sampled.
       </p>
       <p><code>npx tsx src/audit.ts --url=https://example.com</code></p>
