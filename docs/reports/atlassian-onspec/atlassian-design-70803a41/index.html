@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>https://atlassian.design/ - Atlassian Design (atlassian.design)</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 16px 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.2em; word-break: break-all; }
+  .score { color: #ccc; font-size: 14px; }
+  .tabs { display: flex; gap: 4px; padding: 0 24px; border-bottom: 1px solid #333; }
+  .tab-btn { background: none; border: none; color: #999; padding: 10px 16px; cursor: pointer; font-size: 14px; border-bottom: 2px solid transparent; }
+  .tab-btn.active { color: #eee; border-bottom-color: #7aa2f7; }
+  .tab-panel { display: none; padding: 24px; overflow: auto; }
+  .tab-panel.active { display: block; }
+  .tab-panel img { max-width: 100%; display: block; }
+  .findings { padding: 0 24px 32px; }
+  .findings h2 { font-size: 1em; color: #ccc; }
+  .findings ul { padding-left: 20px; margin: 0 0 24px; }
+  .findings li { margin-bottom: 8px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+
+  .legend { position: sticky; top: 0; z-index: 10; background: #222; color: #eee; padding: 8px 12px; display: flex; gap: 16px; align-items: center; font-size: 13px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+  .count { margin-left: auto; color: #999; }
+  .stage { position: relative; display: inline-block; }
+  .stage img { display: block; max-width: none; }
+  .dev-box { position: absolute; border: 2px solid; background: rgba(255, 255, 255, 0.08); box-sizing: border-box; cursor: help; }
+
+</style>
+</head>
+<body>
+<nav><a href="../../../index.html">Specular</a> / <a href="../index.html">Atlassian Design (atlassian.design)</a> / this page</nav>
+<header>
+<h1>https://atlassian.design/</h1>
+<div class="score">page score: 4.0 — 56 flagged deviations, 4 contrast failures</div>
+</header>
+<div class="tabs">
+  <button class="tab-btn active" data-tab="looks" type="button">What it looks like</button>
+  <button class="tab-btn" data-tab="should" type="button">What it should have been</button>
+</div>
+<div id="tab-looks" class="tab-panel active">
+<div class="legend">
+  <strong>https://atlassian.design/</strong>
+  <span class="legend-item"><span class="swatch" style="background:#e53e3e"></span>color</span><span class="legend-item"><span class="swatch" style="background:#dd6b20"></span>spacing</span><span class="legend-item"><span class="swatch" style="background:#3182ce"></span>typography</span><span class="legend-item"><span class="swatch" style="background:#805ad5"></span>radius</span>
+  <span class="legend-item"><span class="swatch" style="background:#ecc94b"></span>accessibility (WCAG fail)</span>
+  <span class="count">5 deviations (score &gt; 15), 19 contrast failures</span>
+</div>
+<div class="stage">
+  <img src="original.png" alt="page screenshot">
+  <div class="dev-box" style="left:826px;top:952px;width:368px;height:524px;border-color:#805ad5;" title="div #15314f58 — score 25.0
+top-left corner radius is 32px, should be 16px"></div>
+  <div class="dev-box" style="left:78px;top:216px;width:65.53125px;height:36px;border-color:#805ad5;" title="div/text #032986b3 — score 25.0
+top-left corner radius is 28px, should be 16px"></div>
+  <div class="dev-box" style="left:614px;top:528px;width:68px;height:36px;border-color:#805ad5;" title="div/text #aaad04e2 — score 25.0
+top-left corner radius is 28px, should be 16px"></div>
+  <div class="dev-box" style="left:944px;top:227px;width:67.875px;height:36px;border-color:#805ad5;" title="div/text #650bea16 — score 25.0
+top-left corner radius is 27px, should be 16px"></div>
+  <div class="dev-box" style="left:1022.390625px;top:5056.8125px;width:135.75px;height:72px;border-color:#805ad5;" title="div/text #650bea16 — score 25.0
+top-left corner radius is 27px, should be 16px"></div>
+  <div class="dev-box" style="left:175px;top:4916.3125px;width:61.125px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:462px;top:4916.3125px;width:135.15625px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:1036px;top:4916.3125px;width:127.84375px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:175px;top:5468.3125px;width:144.90625px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:749px;top:5468.3125px;width:80.9375px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:1036px;top:5284.3125px;width:145.484375px;height:28px;border-color:#ecc94b;" title="h3/text #3256814a — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:135px;top:5002.3125px;width:49.59375px;height:16px;border-color:#ecc94b;" title="span/text #ab957a22 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:135px;top:5022.3125px;width:35.8125px;height:16px;border-color:#ecc94b;" title="span/text #ab957a22 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:135px;top:5042.3125px;width:48.265625px;height:16px;border-color:#ecc94b;" title="span/text #ab957a22 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:135px;top:5062.3125px;width:42.1875px;height:16px;border-color:#ecc94b;" title="span/text #ab957a22 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:301.140625px;top:5002.3125px;width:6.859375px;height:16px;border-color:#ecc94b;" title="span/text #19185bd3 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:293.046875px;top:5022.3125px;width:14.953125px;height:16px;border-color:#ecc94b;" title="span/text #19185bd3 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:292.375px;top:5042.3125px;width:15.625px;height:16px;border-color:#ecc94b;" title="span/text #19185bd3 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:293.046875px;top:5062.3125px;width:14.953125px;height:16px;border-color:#ecc94b;" title="span/text #19185bd3 — contrast 1.3:1 (fail)
+text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:112.625px;top:5360.3125px;width:22.75px;height:16px;border-color:#ecc94b;" title="span/text #2087f154 — contrast 2.4:1 (fail)
+text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:154.734375px;top:5360.3125px;width:22.515625px;height:16px;border-color:#ecc94b;" title="span/text #2087f154 — contrast 2.4:1 (fail)
+text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:197.65625px;top:5360.3125px;width:20.6875px;height:16px;border-color:#ecc94b;" title="span/text #2087f154 — contrast 2.4:1 (fail)
+text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:239.515625px;top:5360.3125px;width:20.953125px;height:16px;border-color:#ecc94b;" title="span/text #2087f154 — contrast 2.4:1 (fail)
+text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA"></div>
+  <div class="dev-box" style="left:280.9375px;top:5360.3125px;width:22.109375px;height:16px;border-color:#ecc94b;" title="span/text #2087f154 — contrast 2.4:1 (fail)
+text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA"></div>
+</div>
+</div>
+<div id="tab-should" class="tab-panel">
+<img src="corrected.png" alt="corrected render of https://atlassian.design/">
+</div>
+<main class="findings">
+<h2>Flagged deviations on this page</h2>
+<ul>
+<li><strong>div</strong> #15314f58 — color is a different shade than the brand palette — closest match is colors.color.background.neutral.bold.[default], a gray (#292A2E)</li>
+<li><strong>div</strong> #15314f58 — background color is a different shade than the brand palette — closest match is colors.color.background.code.default, a white (#FFFFFF)</li>
+<li><strong>div</strong> #15314f58 — top-left corner radius is 32px, should be 16px</li>
+<li><strong>div</strong> #15314f58 — font size is 14px, should be 14px</li>
+<li><strong>div</strong> #15314f58 — using &quot;Atlassian Sans&quot; instead of &quot;Atlassian Sans&quot;</li>
+<li><strong>div</strong> #15314f58 — font weight is 400, should be 400 (different than what's used)</li>
+<li><strong>div</strong> #15314f58 — padding-top is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — padding-right is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — padding-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — padding-left is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — margin-top is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — margin-right is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #15314f58 — margin-left is 0px, should be 0px</li>
+<li><strong>div/text</strong> #032986b3 — color is a different shade than the brand palette — closest match is theme:dark.color.blanket.[default], a black (#101214)</li>
+<li><strong>div/text</strong> #032986b3 — background color is a different shade than the brand palette — closest match is colors.color.chart.categorical.3.[default], a purple (#BF63F3)</li>
+<li><strong>div/text</strong> #032986b3 — top-left corner radius is 28px, should be 16px</li>
+<li><strong>div/text</strong> #032986b3 — font size is 20px, should be 20px</li>
+<li><strong>div/text</strong> #032986b3 — using &quot;Charlie Display&quot; instead of &quot;Charlie Display&quot;</li>
+<li><strong>div/text</strong> #032986b3 — font weight is 600, should be 600 (different than what's used)</li>
+<li><strong>div/text</strong> #032986b3 — padding-top is 6px, should be 6px</li>
+<li><strong>div/text</strong> #032986b3 — padding-right is 12px, should be 12px</li>
+<li><strong>div/text</strong> #032986b3 — padding-bottom is 6px, should be 6px</li>
+<li><strong>div/text</strong> #032986b3 — padding-left is 12px, should be 12px</li>
+<li><strong>div/text</strong> #032986b3 — margin-top is 0px, should be 0px</li>
+<li><strong>div/text</strong> #032986b3 — margin-right is 0px, should be 0px</li>
+<li><strong>div/text</strong> #032986b3 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div/text</strong> #032986b3 — margin-left is 0px, should be 0px</li>
+<li><strong>div/text</strong> #aaad04e2 — color is a different shade than the brand palette — closest match is colors.color.background.code.default, a white (#FFFFFF)</li>
+<li><strong>div/text</strong> #aaad04e2 — background color is a different shade than the brand palette — closest match is colors.color.background.accent.blue.bolder.[default], a blue (#1868DB)</li>
+<li><strong>div/text</strong> #aaad04e2 — top-left corner radius is 28px, should be 16px</li>
+<li><strong>div/text</strong> #aaad04e2 — font size is 20px, should be 20px</li>
+<li><strong>div/text</strong> #aaad04e2 — using &quot;Charlie Display&quot; instead of &quot;Charlie Display&quot;</li>
+<li><strong>div/text</strong> #aaad04e2 — font weight is 600, should be 600 (different than what's used)</li>
+<li><strong>div/text</strong> #aaad04e2 — padding-top is 6px, should be 6px</li>
+<li><strong>div/text</strong> #aaad04e2 — padding-right is 12px, should be 12px</li>
+<li><strong>div/text</strong> #aaad04e2 — padding-bottom is 6px, should be 6px</li>
+<li><strong>div/text</strong> #aaad04e2 — padding-left is 12px, should be 12px</li>
+<li><strong>div/text</strong> #aaad04e2 — margin-top is 0px, should be 0px</li>
+<li><strong>div/text</strong> #aaad04e2 — margin-right is 0px, should be 0px</li>
+<li><strong>div/text</strong> #aaad04e2 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div/text</strong> #aaad04e2 — margin-left is 0px, should be 0px</li>
+<li><strong>div/text</strong> #650bea16 — color is a different shade than the brand palette — closest match is colors.color.background.code.default, a white (#FFFFFF)</li>
+<li><strong>div/text</strong> #650bea16 — background color is a different shade than the brand palette — closest match is theme:dark.color.blanket.[default], a black (#101214)</li>
+<li><strong>div/text</strong> #650bea16 — top-left corner radius is 27px, should be 16px</li>
+<li><strong>div/text</strong> #650bea16 — font size is 20px, should be 20px</li>
+<li><strong>div/text</strong> #650bea16 — using &quot;Charlie Display&quot; instead of &quot;Charlie Display&quot;</li>
+<li><strong>div/text</strong> #650bea16 — font weight is 600, should be 600 (different than what's used)</li>
+<li><strong>div/text</strong> #650bea16 — padding-top is 6px, should be 6px</li>
+<li><strong>div/text</strong> #650bea16 — padding-right is 12px, should be 12px</li>
+<li><strong>div/text</strong> #650bea16 — padding-bottom is 6px, should be 6px</li>
+<li><strong>div/text</strong> #650bea16 — padding-left is 12px, should be 12px</li>
+<li><strong>div/text</strong> #650bea16 — margin-top is 0px, should be 0px</li>
+<li><strong>div/text</strong> #650bea16 — margin-right is 0px, should be 0px</li>
+<li><strong>div/text</strong> #650bea16 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div/text</strong> #650bea16 — margin-left is 0px, should be 0px</li>
+</ul>
+<h2>Contrast failures on this page</h2>
+<ul>
+<li><strong>h3/text</strong> #3256814a — text here is barely readable against its background — 1.3:1, needs at least 3:1 for AA</li>
+<li><strong>span/text</strong> #ab957a22 — text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA</li>
+<li><strong>span/text</strong> #19185bd3 — text here is barely readable against its background — 1.3:1, needs at least 4.5:1 for AA</li>
+<li><strong>span/text</strong> #2087f154 — text here is barely readable against its background — 2.4:1, needs at least 4.5:1 for AA</li>
+</ul>
+</main>
+<script>
+document.querySelectorAll(".tab-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+    document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.remove("active"); });
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
