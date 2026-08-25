@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shopify Polaris (shopify.dev) - design drift report</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 24px; border-bottom: 1px solid #333; }
+  h1 { margin: 0 0 8px; }
+  .score { font-size: 1.2em; }
+  main { padding: 24px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 32px; }
+  th, td { border: 1px solid #333; padding: 6px 10px; text-align: left; font-size: 13px; vertical-align: top; }
+  th { background: #222; }
+  .unverified-banner { margin: 16px 24px 0; padding: 12px 16px; background: #4a2e00; border: 2px solid #d9822b; border-radius: 4px; color: #ffd8a8; font-size: 14px; }
+  .a11y-note { color: #999; font-size: 13px; max-width: 70ch; }
+  section.pages ul { padding-left: 20px; }
+  section.pages li { margin-bottom: 6px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+</style>
+</head>
+<body>
+<nav><a href="../../index.html">Specular</a> / Shopify Polaris (shopify.dev)</nav>
+<header>
+<h1>Shopify Polaris (shopify.dev) (on-spec)</h1>
+<div class="score">Score: 15.5 / 100 — 0 is fully on-spec, 100 is maximally deviant.</div>
+</header>
+<div class="unverified-banner">
+<strong>⚠️ UNVERIFIED ON-SPEC BASELINE</strong> — Could not confirm these pages render actual Polaris components — no &quot;Polaris-&quot; classes or Polaris custom elements found in the DOM, and no live-rendered Polaris page (Storybook, polaris-react.shopify.com) is publicly reachable. This is a docs-shell score, not a verified on-spec baseline.
+<br>Do not compare this score against genuine on-spec targets.
+</div>
+<main>
+<h2>Breakdown by property</h2>
+<table><thead><tr><th>property</th><th>mean deviation</th><th>n</th></tr></thead><tbody>
+<tr><td>font-weight</td><td>0.50</td><td>101</td></tr>
+<tr><td>font-size</td><td>0.46</td><td>101</td></tr>
+<tr><td>border-color</td><td>0.37</td><td>9</td></tr>
+<tr><td>color</td><td>0.25</td><td>101</td></tr>
+<tr><td>font-family</td><td>0.21</td><td>101</td></tr>
+<tr><td>background-color</td><td>0.14</td><td>34</td></tr>
+<tr><td>spacing</td><td>0.03</td><td>808</td></tr>
+<tr><td>border-radius</td><td>0.01</td><td>101</td></tr>
+</tbody></table>
+<h2>Accessibility — WCAG contrast</h2>
+<p class="a11y-note">Separate from the deviation score above: this checks captured text against WCAG 2.1's own contrast thresholds, independent of the brand spec — an element can be on-spec and still fail contrast, or off-spec and still pass.</p>
+<p>Checked: 71, passing: 68, failing: 3</p>
+<table><thead><tr><th>finding</th><th>page</th><th>component</th><th>ratio</th><th>level</th><th>spec-token fix</th></tr></thead><tbody>
+<tr><td>text here is barely readable against its background — 1.5:1, needs at least 4.5:1 for AA</td><td>https://shopify.dev/docs/api/polaris</td><td>li/text</td><td>1.5:1</td><td>fail</td><td>—</td></tr>
+<tr><td>text here is barely readable against its background — 1.5:1, needs at least 4.5:1 for AA</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>li/text</td><td>1.5:1</td><td>fail</td><td>—</td></tr>
+<tr><td>text here is barely readable against its background — 3.9:1, needs at least 4.5:1 for AA</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>3.9:1</td><td>fail</td><td>currently 3.9:1 (fails AA) — the spec token would give you 5.6:1 (passes AA)</td></tr>
+<tr><td>text here passes AA at 4.6:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>a/text</td><td>4.6:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.6:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>button/text</td><td>4.6:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.7:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>4.7:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 4.9:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>4.9:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.9:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>4.9:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 4.9:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>a/text</td><td>4.9:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.1:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>6.1:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.1:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.1:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.1:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>button/text</td><td>6.1:1</td><td>AA</td><td>currently 6.1:1 (passes AA) — the spec token would give you 7.3:1 (passes AAA)</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris</td><td>a/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris</td><td>a/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>a/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>a/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.3:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.3:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.5:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>6.5:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.5:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.5:1</td><td>AA</td><td>currently 6.5:1 (passes AA) — the spec token would give you 7.2:1 (passes AAA)</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.5:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AA at 6.5:1 but falls short of AAA (needs 7:1)</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>6.5:1</td><td>AA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.2:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>8.2:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris</td><td>kbd/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>kbd/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.4:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>8.4:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>h2/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.5:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>8.5:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.7:1</td><td>https://shopify.dev/docs/api/polaris</td><td>span/text</td><td>8.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.7:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>span/text</td><td>8.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 8.7:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>8.7:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 9.0:1</td><td>https://shopify.dev/docs/api/polaris</td><td>p/text</td><td>9.0:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 9.0:1</td><td>https://shopify.dev/docs/api/polaris</td><td>a/text</td><td>9.0:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 9.0:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>div/text</td><td>9.0:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 9.0:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>p/text</td><td>9.0:1</td><td>AAA</td><td>—</td></tr>
+<tr><td>text here passes AAA at 9.0:1</td><td>https://shopify.dev/docs/api/polaris/using-polaris-web-components</td><td>a/text</td><td>9.0:1</td><td>AAA</td><td>—</td></tr>
+</tbody></table>
+<section class="pages">
+<h2>Pages</h2>
+<ul>
+<li><a href="shopify-dev-docs-api-polaris-de614150/index.html">https://shopify.dev/docs/api/polaris</a> — score 14.0</li>
+<li><a href="shopify-dev-docs-api-polaris-using-polaris-web-components-28469e82/index.html">https://shopify.dev/docs/api/polaris/using-polaris-web-components</a> — score 17.0</li>
+</ul>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>https://shopify.dev/docs/api/polaris - Shopify Polaris (shopify.dev)</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 16px 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.2em; word-break: break-all; }
+  .score { color: #ccc; font-size: 14px; }
+  .tabs { display: flex; gap: 4px; padding: 0 24px; border-bottom: 1px solid #333; }
+  .tab-btn { background: none; border: none; color: #999; padding: 10px 16px; cursor: pointer; font-size: 14px; border-bottom: 2px solid transparent; }
+  .tab-btn.active { color: #eee; border-bottom-color: #7aa2f7; }
+  .tab-panel { display: none; padding: 24px; overflow: auto; }
+  .tab-panel.active { display: block; }
+  .tab-panel img { max-width: 100%; display: block; }
+  .findings { padding: 0 24px 32px; }
+  .findings h2 { font-size: 1em; color: #ccc; }
+  .findings ul { padding-left: 20px; margin: 0 0 24px; }
+  .findings li { margin-bottom: 8px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+
+  .legend { position: sticky; top: 0; z-index: 10; background: #222; color: #eee; padding: 8px 12px; display: flex; gap: 16px; align-items: center; font-size: 13px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+  .count { margin-left: auto; color: #999; }
+  .stage { position: relative; display: inline-block; }
+  .stage img { display: block; max-width: none; }
+  .dev-box { position: absolute; border: 2px solid; background: rgba(255, 255, 255, 0.08); box-sizing: border-box; cursor: help; }
+
+</style>
+</head>
+<body>
+<nav><a href="../../../index.html">Specular</a> / <a href="../index.html">Shopify Polaris (shopify.dev)</a> / this page</nav>
+<header>
+<h1>https://shopify.dev/docs/api/polaris</h1>
+<div class="score">page score: 14.0 — 161 flagged deviations, 1 contrast failure</div>
+</header>
+<div class="tabs">
+  <button class="tab-btn active" data-tab="looks" type="button">What it looks like</button>
+  <button class="tab-btn" data-tab="should" type="button">What it should have been</button>
+</div>
+<div id="tab-looks" class="tab-panel active">
+<div class="legend">
+  <strong>https://shopify.dev/docs/api/polaris</strong>
+  <span class="legend-item"><span class="swatch" style="background:#e53e3e"></span>color</span><span class="legend-item"><span class="swatch" style="background:#dd6b20"></span>spacing</span><span class="legend-item"><span class="swatch" style="background:#3182ce"></span>typography</span><span class="legend-item"><span class="swatch" style="background:#805ad5"></span>radius</span>
+  <span class="legend-item"><span class="swatch" style="background:#ecc94b"></span>accessibility (WCAG fail)</span>
+  <span class="count">27 deviations (score &gt; 15), 1 contrast failure</span>
+</div>
+<div class="stage">
+  <img src="original.png" alt="page screenshot">
+  <div class="dev-box" style="left:4px;top:4px;width:1px;height:1px;border-color:#3182ce;" title="a/text #4f16eaa0 — score 23.5
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:158px;width:787.609375px;height:45px;border-color:#3182ce;" title="a/text #107cf6bf — score 23.5
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:413.625px;top:222px;width:51.09375px;height:21px;border-color:#3182ce;" title="a/text #107cf6bf — score 23.5
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:31.5px;top:71.5px;width:1px;height:1px;border-color:#3182ce;" title="span/text #e4c2d8fe — score 27.8
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:671.25px;top:89px;width:103.796875px;height:20px;border-color:#e53e3e;" title="span/text #0c7c4bda — score 15.1
+color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)"></div>
+  <div class="dev-box" style="left:827.046875px;top:90px;width:131.203125px;height:17px;border-color:#e53e3e;" title="span/text #0c7c4bda — score 15.1
+color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)"></div>
+  <div class="dev-box" style="left:996.25px;top:90px;width:61.484375px;height:17px;border-color:#e53e3e;" title="span/text #0c7c4bda — score 15.1
+color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)"></div>
+  <div class="dev-box" style="left:276.265625px;top:365px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:689.5px;top:365px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:276.265625px;top:549px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:689.5px;top:549px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:276.265625px;top:773px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:689.5px;top:773px;width:355.234375px;height:20px;border-color:#3182ce;" title="span/text #95184ef3 — score 16.0
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:711.78125px;top:1045px;width:23.984375px;height:20px;border-color:#e53e3e;" title="span/text #29fea334 — score 15.1
+color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)"></div>
+  <div class="dev-box" style="left:747.765625px;top:1045px;width:18.953125px;height:20px;border-color:#e53e3e;" title="span/text #29fea334 — score 15.1
+color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)"></div>
+  <div class="dev-box" style="left:1274px;top:49px;width:1px;height:1px;border-color:#3182ce;" title="span/text #4fdb2281 — score 15.3
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:1007.96875px;top:14px;width:20px;height:20px;border-color:#805ad5;" title="kbd/text #cc1348ea — score 28.1
+top-left corner radius is 3px, should be 2px"></div>
+  <div class="dev-box" style="left:255.265625px;top:284px;width:397.234375px;height:168px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:668.5px;top:284px;width:397.234375px;height:168px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:468px;width:397.234375px;height:208px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:668.5px;top:468px;width:397.234375px;height:208px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:692px;width:397.234375px;height:208px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:668.5px;top:692px;width:397.234375px;height:208px;border-color:#3182ce;" title="div #09c47f82 — score 17.2
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:1265px;top:48px;width:600px;height:664px;border-color:#3182ce;" title="div #5dc62e01 — score 19.3
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:80px;width:280.71875px;height:40px;border-color:#3182ce;" title="h1/text #3f8254dd — score 16.0
+font size is 32px, should be 30px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 600, should be 650 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:132px;width:810.46875px;height:72px;border-color:#3182ce;" title="p/text #b7a25426 — score 15.3
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:255.265625px;top:220px;width:810.46875px;height:48px;border-color:#3182ce;" title="p/text #b7a25426 — score 15.3
+font size is 16px, should be 14px
+using &quot;Inter&quot; instead of &quot;Inter&quot;
+font weight is 400, should be 450 (heavier than what's used)"></div>
+  <div class="dev-box" style="left:1175.5px;top:12px;width:9px;height:24px;border-color:#ecc94b;" title="li/text #ad1895b0 — contrast 1.5:1 (fail)
+text here is barely readable against its background — 1.5:1, needs at least 4.5:1 for AA"></div>
+</div>
+</div>
+<div id="tab-should" class="tab-panel">
+<img src="corrected.png" alt="corrected render of https://shopify.dev/docs/api/polaris">
+</div>
+<main class="findings">
+<h2>Flagged deviations on this page</h2>
+<ul>
+<li><strong>a/text</strong> #4f16eaa0 — color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)</li>
+<li><strong>a/text</strong> #4f16eaa0 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — font size is 16px, should be 14px</li>
+<li><strong>a/text</strong> #4f16eaa0 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>a/text</strong> #4f16eaa0 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>a/text</strong> #4f16eaa0 — padding-top is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — padding-right is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — padding-bottom is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — padding-left is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — margin-top is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — margin-right is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — margin-bottom is 0px, should be 0px</li>
+<li><strong>a/text</strong> #4f16eaa0 — margin-left is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)</li>
+<li><strong>a/text</strong> #107cf6bf — top-left corner radius is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — font size is 16px, should be 14px</li>
+<li><strong>a/text</strong> #107cf6bf — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>a/text</strong> #107cf6bf — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>a/text</strong> #107cf6bf — padding-top is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — padding-right is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — padding-bottom is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — padding-left is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — margin-top is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — margin-right is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — margin-bottom is 0px, should be 0px</li>
+<li><strong>a/text</strong> #107cf6bf — margin-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — color is a different shade than the brand palette — closest match is theme:dark.color-tooltip-tail-up-border, a gray (#474747)</li>
+<li><strong>span/text</strong> #e4c2d8fe — top-left corner radius is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — font size is 16px, should be 14px</li>
+<li><strong>span/text</strong> #e4c2d8fe — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>span/text</strong> #e4c2d8fe — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>span/text</strong> #e4c2d8fe — padding-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — padding-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — padding-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — padding-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — margin-top is -1px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — margin-right is -1px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — margin-bottom is -1px, should be 0px</li>
+<li><strong>span/text</strong> #e4c2d8fe — margin-left is -1px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)</li>
+<li><strong>span/text</strong> #0c7c4bda — top-left corner radius is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — font size is 14px, should be 14px</li>
+<li><strong>span/text</strong> #0c7c4bda — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>span/text</strong> #0c7c4bda — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>span/text</strong> #0c7c4bda — padding-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — padding-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — padding-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — padding-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — margin-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — margin-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — margin-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #0c7c4bda — margin-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — color is a different shade than the brand palette — closest match is colors.color-bg-inverse, a gray (#1a1a1a)</li>
+<li><strong>span/text</strong> #95184ef3 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — font size is 16px, should be 14px</li>
+<li><strong>span/text</strong> #95184ef3 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>span/text</strong> #95184ef3 — font weight is 600, should be 650 (heavier than what's used)</li>
+<li><strong>span/text</strong> #95184ef3 — padding-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — padding-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — padding-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — padding-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — margin-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — margin-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — margin-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #95184ef3 — margin-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)</li>
+<li><strong>span/text</strong> #29fea334 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — font size is 14px, should be 14px</li>
+<li><strong>span/text</strong> #29fea334 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>span/text</strong> #29fea334 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>span/text</strong> #29fea334 — padding-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — padding-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — padding-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — padding-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — margin-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — margin-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — margin-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #29fea334 — margin-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — color is a different shade than the brand palette — closest match is theme:dark.color-tooltip-tail-up-border, a gray (#474747)</li>
+<li><strong>span/text</strong> #4fdb2281 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — font size is 16px, should be 14px</li>
+<li><strong>span/text</strong> #4fdb2281 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>span/text</strong> #4fdb2281 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>span/text</strong> #4fdb2281 — padding-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — padding-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — padding-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — padding-left is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — margin-top is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — margin-right is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — margin-bottom is 0px, should be 0px</li>
+<li><strong>span/text</strong> #4fdb2281 — margin-left is 0px, should be 0px</li>
+<li><strong>kbd/text</strong> #cc1348ea — color is a different shade than the brand palette — closest match is theme:dark.color-tooltip-tail-up-border, a gray (#474747)</li>
+<li><strong>kbd/text</strong> #cc1348ea — background color is a different shade than the brand palette — closest match is colors.color-bg-surface-active, a white (#f3f3f3)</li>
+<li><strong>kbd/text</strong> #cc1348ea — top-left corner radius is 3px, should be 2px</li>
+<li><strong>kbd/text</strong> #cc1348ea — font size is 12px, should be 12px</li>
+<li><strong>kbd/text</strong> #cc1348ea — using &quot;JetBrains Mono&quot; instead of &quot;Inter&quot;</li>
+<li><strong>kbd/text</strong> #cc1348ea — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>kbd/text</strong> #cc1348ea — padding-top is 2px, should be 2px</li>
+<li><strong>kbd/text</strong> #cc1348ea — padding-right is 6px, should be 6px</li>
+<li><strong>kbd/text</strong> #cc1348ea — padding-bottom is 2px, should be 2px</li>
+<li><strong>kbd/text</strong> #cc1348ea — padding-left is 6px, should be 6px</li>
+<li><strong>kbd/text</strong> #cc1348ea — margin-top is 0px, should be 0px</li>
+<li><strong>kbd/text</strong> #cc1348ea — margin-right is 0px, should be 0px</li>
+<li><strong>kbd/text</strong> #cc1348ea — margin-bottom is 0px, should be 0px</li>
+<li><strong>kbd/text</strong> #cc1348ea — margin-left is 4px, should be 4px</li>
+<li><strong>div</strong> #09c47f82 — color is a different shade than the brand palette — closest match is colors.color-bg-fill-emphasis, a blue (#005bd3)</li>
+<li><strong>div</strong> #09c47f82 — background color is a different shade than the brand palette — closest match is colors.color-bg-fill-hover, a white (#fafafa)</li>
+<li><strong>div</strong> #09c47f82 — border color is a different shade than the brand palette — closest match is colors.color-bg-fill-tertiary-hover, a gray (#d4d4d4)</li>
+<li><strong>div</strong> #09c47f82 — top-left corner radius is 8px, should be 8px</li>
+<li><strong>div</strong> #09c47f82 — font size is 16px, should be 14px</li>
+<li><strong>div</strong> #09c47f82 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>div</strong> #09c47f82 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>div</strong> #09c47f82 — padding-top is 12px, should be 12px</li>
+<li><strong>div</strong> #09c47f82 — padding-right is 12px, should be 12px</li>
+<li><strong>div</strong> #09c47f82 — padding-bottom is 12px, should be 12px</li>
+<li><strong>div</strong> #09c47f82 — padding-left is 12px, should be 12px</li>
+<li><strong>div</strong> #09c47f82 — margin-top is 0px, should be 0px</li>
+<li><strong>div</strong> #09c47f82 — margin-right is 0px, should be 0px</li>
+<li><strong>div</strong> #09c47f82 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #09c47f82 — margin-left is 0px, should be 0px</li>
+<li><strong>div</strong> #5dc62e01 — color is a different shade than the brand palette — closest match is theme:dark.color-tooltip-tail-up-border, a gray (#474747)</li>
+<li><strong>div</strong> #5dc62e01 — background color is a different shade than the brand palette — closest match is colors.color-bg-surface-active, a white (#f3f3f3)</li>
+<li><strong>div</strong> #5dc62e01 — border color is a different shade than the brand palette — closest match is colors.color-bg-fill-info-hover, a blue (#51c0ff)</li>
+<li><strong>div</strong> #5dc62e01 — top-left corner radius is 16px, should be 16px</li>
+<li><strong>div</strong> #5dc62e01 — font size is 16px, should be 14px</li>
+<li><strong>div</strong> #5dc62e01 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>div</strong> #5dc62e01 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>div</strong> #5dc62e01 — padding-top is 8px, should be 8px</li>
+<li><strong>div</strong> #5dc62e01 — padding-right is 8px, should be 8px</li>
+<li><strong>div</strong> #5dc62e01 — padding-bottom is 8px, should be 8px</li>
+<li><strong>div</strong> #5dc62e01 — padding-left is 8px, should be 8px</li>
+<li><strong>div</strong> #5dc62e01 — margin-top is 0px, should be 0px</li>
+<li><strong>div</strong> #5dc62e01 — margin-right is 8px, should be 8px</li>
+<li><strong>div</strong> #5dc62e01 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #5dc62e01 — margin-left is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — color is a different shade than the brand palette — closest match is colors.color-bg-inverse, a gray (#1a1a1a)</li>
+<li><strong>h1/text</strong> #3f8254dd — top-left corner radius is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — font size is 32px, should be 30px</li>
+<li><strong>h1/text</strong> #3f8254dd — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>h1/text</strong> #3f8254dd — font weight is 600, should be 650 (heavier than what's used)</li>
+<li><strong>h1/text</strong> #3f8254dd — padding-top is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — padding-right is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — padding-bottom is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — padding-left is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — margin-top is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — margin-right is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — margin-bottom is 0px, should be 0px</li>
+<li><strong>h1/text</strong> #3f8254dd — margin-left is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — color is a different shade than the brand palette — closest match is theme:dark.color-tooltip-tail-up-border, a gray (#474747)</li>
+<li><strong>p/text</strong> #b7a25426 — top-left corner radius is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — font size is 16px, should be 14px</li>
+<li><strong>p/text</strong> #b7a25426 — using &quot;Inter&quot; instead of &quot;Inter&quot;</li>
+<li><strong>p/text</strong> #b7a25426 — font weight is 400, should be 450 (heavier than what's used)</li>
+<li><strong>p/text</strong> #b7a25426 — padding-top is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — padding-right is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — padding-bottom is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — padding-left is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — margin-top is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — margin-right is 0px, should be 0px</li>
+<li><strong>p/text</strong> #b7a25426 — margin-bottom is 16px, should be 16px</li>
+<li><strong>p/text</strong> #b7a25426 — margin-left is 0px, should be 0px</li>
+</ul>
+<h2>Contrast failures on this page</h2>
+<ul>
+<li><strong>li/text</strong> #ad1895b0 — text here is barely readable against its background — 1.5:1, needs at least 4.5:1 for AA</li>
+</ul>
+</main>
+<script>
+document.querySelectorAll(".tab-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+    document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.remove("active"); });
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
