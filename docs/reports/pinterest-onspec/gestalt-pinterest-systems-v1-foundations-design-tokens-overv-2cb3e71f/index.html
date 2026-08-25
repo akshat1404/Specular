@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>https://gestalt.pinterest.systems/v1/foundations/design_tokens/overview - Pinterest Gestalt (gestalt.pinterest.systems)</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; }
+  nav { padding: 12px 24px; font-size: 13px; color: #999; border-bottom: 1px solid #333; }
+  nav a { color: #7aa2f7; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  header { padding: 16px 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.2em; word-break: break-all; }
+  .score { color: #ccc; font-size: 14px; }
+  .tabs { display: flex; gap: 4px; padding: 0 24px; border-bottom: 1px solid #333; }
+  .tab-btn { background: none; border: none; color: #999; padding: 10px 16px; cursor: pointer; font-size: 14px; border-bottom: 2px solid transparent; }
+  .tab-btn.active { color: #eee; border-bottom-color: #7aa2f7; }
+  .tab-panel { display: none; padding: 24px; overflow: auto; }
+  .tab-panel.active { display: block; }
+  .tab-panel img { max-width: 100%; display: block; }
+  .findings { padding: 0 24px 32px; }
+  .findings h2 { font-size: 1em; color: #ccc; }
+  .findings ul { padding-left: 20px; margin: 0 0 24px; }
+  .findings li { margin-bottom: 8px; font-size: 14px; }
+  .empty { color: #999; font-style: italic; }
+
+  .legend { position: sticky; top: 0; z-index: 10; background: #222; color: #eee; padding: 8px 12px; display: flex; gap: 16px; align-items: center; font-size: 13px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+  .count { margin-left: auto; color: #999; }
+  .stage { position: relative; display: inline-block; }
+  .stage img { display: block; max-width: none; }
+  .dev-box { position: absolute; border: 2px solid; background: rgba(255, 255, 255, 0.08); box-sizing: border-box; cursor: help; }
+
+</style>
+</head>
+<body>
+<nav><a href="../../../index.html">Specular</a> / <a href="../index.html">Pinterest Gestalt (gestalt.pinterest.systems)</a> / this page</nav>
+<header>
+<h1>https://gestalt.pinterest.systems/v1/foundations/design_tokens/overview</h1>
+<div class="score">page score: 4.3 — 14 flagged deviations, 2 contrast failures</div>
+</header>
+<div class="tabs">
+  <button class="tab-btn active" data-tab="looks" type="button">What it looks like</button>
+  <button class="tab-btn" data-tab="should" type="button">What it should have been</button>
+</div>
+<div id="tab-looks" class="tab-panel active">
+<div class="legend">
+  <strong>https://gestalt.pinterest.systems/v1/foundations/design_tokens/overview</strong>
+  <span class="legend-item"><span class="swatch" style="background:#e53e3e"></span>color</span><span class="legend-item"><span class="swatch" style="background:#dd6b20"></span>spacing</span><span class="legend-item"><span class="swatch" style="background:#3182ce"></span>typography</span><span class="legend-item"><span class="swatch" style="background:#805ad5"></span>radius</span>
+  <span class="legend-item"><span class="swatch" style="background:#ecc94b"></span>accessibility (WCAG fail)</span>
+  <span class="count">1 deviation (score &gt; 15), 4 contrast failures</span>
+</div>
+<div class="stage">
+  <img src="original.png" alt="page screenshot">
+  <div class="dev-box" style="left:503.203125px;top:182px;width:90.015625px;height:3px;border-color:#805ad5;" title="div #32b99456 — score 17.7
+top-left corner radius is 1.5px, should be 0px"></div>
+  <div class="dev-box" style="left:644px;top:17871.90625px;width:250px;height:50px;border-color:#ecc94b;" title="div/text #c13b76bb — contrast 2.5:1 (fail)
+text here is barely readable against its background — 2.5:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:644px;top:20260.703125px;width:250px;height:50px;border-color:#ecc94b;" title="div/text #c13b76bb — contrast 2.5:1 (fail)
+text here is barely readable against its background — 2.5:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:935px;top:17871.90625px;width:250px;height:50px;border-color:#ecc94b;" title="div/text #bfd1d674 — contrast 2.1:1 (fail)
+text here is barely readable against its background — 2.1:1, needs at least 3:1 for AA"></div>
+  <div class="dev-box" style="left:935px;top:20260.703125px;width:250px;height:50px;border-color:#ecc94b;" title="div/text #bfd1d674 — contrast 2.1:1 (fail)
+text here is barely readable against its background — 2.1:1, needs at least 3:1 for AA"></div>
+</div>
+</div>
+<div id="tab-should" class="tab-panel">
+<img src="corrected.png" alt="corrected render of https://gestalt.pinterest.systems/v1/foundations/design_tokens/overview">
+</div>
+<main class="findings">
+<h2>Flagged deviations on this page</h2>
+<ul>
+<li><strong>div</strong> #32b99456 — color is a different shade than the brand palette — closest match is colors.color-transparent, a black (#000000)</li>
+<li><strong>div</strong> #32b99456 — background color is a different shade than the brand palette — closest match is colors.color-black-cosmicore-900, a black (#111111)</li>
+<li><strong>div</strong> #32b99456 — top-left corner radius is 1.5px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — font size is 16px, should be 16px</li>
+<li><strong>div</strong> #32b99456 — using &quot;Times New Roman&quot; instead of &quot;-apple-system&quot;</li>
+<li><strong>div</strong> #32b99456 — font weight is 400, should be 400 (different than what's used)</li>
+<li><strong>div</strong> #32b99456 — padding-top is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — padding-right is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — padding-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — padding-left is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — margin-top is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — margin-right is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — margin-bottom is 0px, should be 0px</li>
+<li><strong>div</strong> #32b99456 — margin-left is 0px, should be 0px</li>
+</ul>
+<h2>Contrast failures on this page</h2>
+<ul>
+<li><strong>div/text</strong> #c13b76bb — text here is barely readable against its background — 2.5:1, needs at least 3:1 for AA</li>
+<li><strong>div/text</strong> #bfd1d674 — text here is barely readable against its background — 2.1:1, needs at least 3:1 for AA</li>
+</ul>
+</main>
+<script>
+document.querySelectorAll(".tab-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+    document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.remove("active"); });
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+  });
+});
+</script>
+</body>
+</html>
