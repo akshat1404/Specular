@@ -9,6 +9,8 @@ import type { TokenSpec } from "../schema/tokenSpec.js";
 import type { PropertyKind } from "../matchers/types.js";
 import { scoreElement } from "../aggregator/aggregate.js";
 import { resolveToken } from "../matchers/resolve.js";
+import { correctedContrast, isLargeText } from "../accessibility/contrast.js";
+import { parsePx } from "../matchers/scale.js";
 
 /**
  * Below this many *raw* (pre-dedupe) sampled elements, a page is treated as
@@ -235,6 +237,29 @@ export function buildCorrections(elements: ExtractedElement[], spec: TokenSpec):
 
       const resolved = resolveToken(d.nearestToken, spec);
       fixes[d.property] = d.property === "border-radius" ? `${resolved}px` : d.property === "font-family" ? `"${resolved}"` : String(resolved);
+    }
+
+    // The color matcher only minimizes Delta-E — it has no concept of what a
+    // token is *for*, so its nearest match for a text color can turn out to
+    // be a token named for something else entirely (a button-background
+    // color, say) and not actually fix this element's own contrast failure,
+    // or even newly break a passing one. Only elements the accessibility
+    // pass actually checked (effectiveBackgroundColor is set — see
+    // sample.ts's own resolveEffectiveBackground) have a finding to protect;
+    // for anything else this is a no-op.
+    if ((fixes.color || fixes["background-color"]) && el.styles.effectiveBackgroundColor !== undefined) {
+      const largeText = isLargeText(parsePx(el.styles.fontSize), Number(el.styles.fontWeight));
+      const { level: correctedLevel } = correctedContrast(deviations, el.styles.color, el.styles.effectiveBackgroundColor, largeText, spec);
+      if (correctedLevel === "fail") {
+        // Don't silently present a broken "fix": drop the color/
+        // background-color patch for this instance so the corrected render
+        // honestly keeps showing the original, still-flagged colors rather
+        // than a different-but-still-unreadable combination. Other
+        // corrections on this same instance (border-color, radius,
+        // font-family) don't affect text contrast and still apply.
+        delete fixes.color;
+        delete fixes["background-color"];
+      }
     }
 
     if (Object.keys(fixes).length > 0) {

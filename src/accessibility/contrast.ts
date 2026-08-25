@@ -32,6 +32,39 @@ export function classifyContrast(ratio: number, largeText: boolean): WcagLevel {
 const LEVEL_RANK: Record<WcagLevel, number> = { fail: 0, AA: 1, AAA: 2 };
 
 /**
+ * What correcting this element's color/background-color deviation(s) to
+ * their nearest spec token(s) would do to its contrast ratio. Shared by
+ * `buildTieIn` below (surfacing the tie-in note) and by
+ * sample.ts's `buildCorrections` (deciding whether a proposed color patch
+ * is even safe to apply to the corrected render) — kept in one place so
+ * the two callers can't drift on what "the corrected color" means for an
+ * element whose own `background-color` isn't necessarily the one its text
+ * actually renders against.
+ *
+ * `bgDev` is only meaningful when the effective background *is* this
+ * element's own background — an ancestor's flagged background-color
+ * deviation belongs to a different sampled instance, not this one; that's
+ * exactly why it's only present in `deviations` when `scoreElement` found
+ * this element's own `background-color` visible (see aggregate.ts).
+ */
+export function correctedContrast(
+  deviations: PropertyDeviation[],
+  capturedColor: string,
+  effectiveBackground: string,
+  largeText: boolean,
+  spec: TokenSpec
+): { ratio: number; level: WcagLevel } {
+  const colorDev = deviations.find((d) => d.property === "color");
+  const bgDev = deviations.find((d) => d.property === "background-color");
+
+  const correctedFg = colorDev ? parseCssColor(String(resolveToken(colorDev.nearestToken, spec))) : parseCssColor(capturedColor);
+  const correctedBg = bgDev ? parseCssColor(String(resolveToken(bgDev.nearestToken, spec))) : parseCssColor(effectiveBackground);
+
+  const ratio = contrastRatio(correctedFg, correctedBg);
+  return { ratio, level: classifyContrast(ratio, largeText) };
+}
+
+/**
  * What correcting a color/background-color deviation on this element to its
  * nearest spec token would do to the contrast ratio — see ContrastTieIn's
  * doc comment for why this is only surfaced when it crosses a threshold the
@@ -46,19 +79,10 @@ function buildTieIn(
   effectiveBackground: string,
   spec: TokenSpec
 ): AccessibilityFinding["tieIn"] {
-  const colorDev = deviations.find((d) => d.property === "color");
-  // Only meaningful when the effective background *is* this element's own
-  // background — an ancestor's flagged background-color deviation belongs
-  // to a different sampled instance, not this one.
-  const bgDev = deviations.find((d) => d.property === "background-color");
+  const hasColorOrBgDeviation = deviations.some((d) => d.property === "color" || d.property === "background-color");
+  if (!hasColorOrBgDeviation) return undefined;
 
-  if (!colorDev && !bgDev) return undefined;
-
-  const correctedFg = colorDev ? parseCssColor(String(resolveToken(colorDev.nearestToken, spec))) : parseCssColor(capturedColor);
-  const correctedBg = bgDev ? parseCssColor(String(resolveToken(bgDev.nearestToken, spec))) : parseCssColor(effectiveBackground);
-
-  const correctedRatio = contrastRatio(correctedFg, correctedBg);
-  const correctedLevel = classifyContrast(correctedRatio, largeText);
+  const { ratio: correctedRatio, level: correctedLevel } = correctedContrast(deviations, capturedColor, effectiveBackground, largeText, spec);
 
   if (LEVEL_RANK[correctedLevel] <= LEVEL_RANK[level]) return undefined;
 
