@@ -45,7 +45,7 @@ ${corrected}
 }
 
 /** Same warning as summaryMarkdown's `> ⚠️ **UNVERIFIED ON-SPEC BASELINE**` banner, ported to HTML — same wording/severity, not a reinvented one, so it reads as the same caveat wherever it's seen. */
-function renderUnverifiedBanner(target: CrawlTarget): string {
+export function renderUnverifiedBanner(target: CrawlTarget): string {
   if (!target.unverified) return "";
   return `<div class="unverified-banner">
 <strong>⚠️ UNVERIFIED ON-SPEC BASELINE</strong> — ${escapeHtml(target.unverified)}
@@ -53,7 +53,8 @@ function renderUnverifiedBanner(target: CrawlTarget): string {
 </div>`;
 }
 
-function renderBreakdownTable(report: ProductReport): string {
+/** Also reused, as-is, by the per-target hosted-site overview page (site/targetOverview.ts) — the same table, no need for a second renderer. */
+export function renderBreakdownTable(report: ProductReport): string {
   const rows = report.breakdown
     .map((b) => `<tr><td>${escapeHtml(b.property)}</td><td>${b.meanNormalized.toFixed(2)}</td><td>${b.count}</td></tr>`)
     .join("\n");
@@ -82,7 +83,8 @@ ${rows}
  * WCAG contrast is an external, objective pass/fail against the standard's
  * own thresholds, independent of the brand token spec.
  */
-function renderAccessibilitySection(report: ProductReport): string {
+/** Also reused, as-is, by the per-target hosted-site overview page (site/targetOverview.ts). */
+export function renderAccessibilitySection(report: ProductReport): string {
   const a = report.accessibility;
   if (!a || a.totalChecked === 0) return "";
 

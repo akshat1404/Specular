@@ -9,6 +9,7 @@
     "validate": "npm run build && node dist/src/validate.js",
     "audit": "npm run build && node dist/src/audit.js",
     "summary-pdf": "npm run build && node dist/src/summaryPdf.js",
+    "build-site": "npm run build && node dist/src/site/buildSite.js",
     "test": "vitest run",
     "test:watch": "vitest"
   },
