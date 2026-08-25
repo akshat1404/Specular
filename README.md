@@ -3,9 +3,7 @@
 Deviation-detection engine for software products: diffs a running app's
 *resolved* styles against a company's own brand token spec, and reports how
 far they've drifted. Closer in spirit to Lighthouse/Sentry/a linter-as-a-
-service than to a design tool: see
-[brand-deviation-engine-brief.md](brand-deviation-engine-brief.md) for the
-full problem statement and design rationale.
+service than to a design tool: access it [here](https://akshat1404.github.io/Specular/)
 
 ## Approach
 
