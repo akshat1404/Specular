@@ -152,6 +152,20 @@ overlay's own faint color is used rather than what visually composites
 underneath it or through a `backdrop-filter`; worth keeping in mind when
 reading ratios near 1:1 on frosted-glass/overlay UI.
 
+A related caveat, found investigating one of Pinterest's worst
+contrast offenders (`business.pinterest.com/en-in/how-pinterest-works/`,
+a "640M" stat card): 25 controlled Specular captures landed on the same
+gray-on-gray (1.0:1) rendering every single time, yet a manual browser
+visit showed the same element correctly styled — light background, black
+text. Repeat testing ruled out Specular's own pipeline as the cause
+(headless vs. headed Chromium, `navigator.webdriver`, animation-disabling,
+wait duration, and locale all made no difference across the trials); the
+likely explanation is that the page itself serves more than one rendering
+of this component, and Specular's single-capture-per-page methodology
+consistently landed on the broken one. A finding like this accurately
+describes what Specular's capture actually saw — it isn't necessarily
+what every visitor sees.
+
 Two real bugs were found and fixed during this validation (not synthetic
 fixtures, genuinely surfaced by messy real-world pages):
 
