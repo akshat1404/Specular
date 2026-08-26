@@ -22,13 +22,13 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 | property | mean deviation | n |
 |---|---|---|
-| font-size | 0.05 | 370 |
-| border-radius | 0.03 | 370 |
-| spacing | 0.03 | 2960 |
-| font-family | 0.00 | 370 |
-| color | 0.00 | 370 |
+| font-size | 0.05 | 372 |
+| border-radius | 0.03 | 372 |
+| spacing | 0.03 | 2976 |
+| font-family | 0.00 | 372 |
+| color | 0.00 | 372 |
 | background-color | 0.00 | 138 |
-| font-weight | 0.00 | 370 |
+| font-weight | 0.00 | 372 |
 | border-color | 0.00 | 15 |
 
 ## Worst offenders
@@ -44,7 +44,7 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 | margin-left is -1px, should be 2px | https://carbondesignsystem.com/ | a/text | 91f06406 | spacing (margin-left): -1 | spacing:2 | 1.00 |
 | padding-top is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
 | padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
-| padding-right is 69.9844px, should be 64px | https://carbondesignsystem.com/ | a | 80583567 | spacing (padding-right): 69.9844 | spacing:64 | 1.00 |
+| padding-right is 69.9844px, should be 64px | https://carbondesignsystem.com/ | a | bc4bbf7b | spacing (padding-right): 69.9844 | spacing:64 | 1.00 |
 | padding-right is 77.7344px, should be 80px | https://carbondesignsystem.com/ | a | dd7a13c1 | spacing (padding-right): 77.7344 | spacing:80 | 1.00 |
 | margin-top is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-top): -1 | spacing:2 | 1.00 |
 | margin-right is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-right): -1 | spacing:2 | 1.00 |
@@ -70,7 +70,7 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 _Separate from the deviation score above: this checks captured text against WCAG 2.1's own contrast thresholds, independent of the brand spec — an element can be on-spec and still fail contrast, or off-spec and still pass._
 
-Checked: 233, passing: 233, failing: 0
+Checked: 235, passing: 235, failing: 0
 
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|

@@ -14,3257 +14,6 @@
     "product": "Jira (jira.atlassian.com)",
     "pages": [
       {
-        "page": "https://jira.atlassian.com/",
-        "components": [
-          {
-            "component": "a/text",
-            "instances": [
-              {
-                "component": "a/text",
-                "instanceId": "25a61c3c",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "a/text",
-                "instanceId": "afd0aa5e",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(16, 18, 20)",
-                    "nearestToken": "theme:dark.color.blanket.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 16,
-                    "nearestToken": "spacing:16",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 16,
-                    "nearestToken": "spacing:16",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 2,
-                    "nearestToken": "spacing:2",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 6.25
-              },
-              {
-                "component": "a/text",
-                "instanceId": "685bebda",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 3,
-                    "nearestToken": "border-radius:2",
-                    "distance": 1,
-                    "normalized": 1,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 8,
-                    "nearestToken": "spacing:8",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 24,
-                    "nearestToken": "spacing:24",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 8,
-                    "nearestToken": "spacing:8",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 25
-              },
-              {
-                "component": "a/text",
-                "instanceId": "9968dcf8",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(24, 104, 219)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 10000,
-                    "nearestToken": "border-radius:9999",
-                    "distance": 1,
-                    "normalized": 1,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 500,
-                    "nearestToken": "font-weight:500",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 6,
-                    "nearestToken": "spacing:6",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 22,
-                    "nearestToken": "spacing:20",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 6,
-                    "nearestToken": "spacing:6",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 22,
-                    "nearestToken": "spacing:20",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 31.25
-              },
-              {
-                "component": "a/text",
-                "instanceId": "6959469d",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(24, 104, 219)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 10000,
-                    "nearestToken": "border-radius:9999",
-                    "distance": 1,
-                    "normalized": 1,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 20,
-                    "nearestToken": "font-size:20",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 500,
-                    "nearestToken": "font-weight:500",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 6,
-                    "nearestToken": "spacing:6",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 22,
-                    "nearestToken": "spacing:20",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 8,
-                    "nearestToken": "spacing:8",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 22,
-                    "nearestToken": "spacing:20",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 31.25
-              },
-              {
-                "component": "a/text",
-                "instanceId": "e0146753",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(24, 104, 219)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 15.625
-          },
-          {
-            "component": "div",
-            "instances": [
-              {
-                "component": "div",
-                "instanceId": "c497e32a",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "div",
-                "instanceId": "17bae37b",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(24, 104, 219)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "div",
-                "instanceId": "3b70567f",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(99, 102, 107)",
-                    "nearestToken": "theme:dark.color.background.accent.gray.subtler.hovered",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(248, 248, 248)",
-                    "nearestToken": "colors.color.background.input.hovered",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 40,
-                    "nearestToken": "border-radius:16",
-                    "distance": 24,
-                    "normalized": 1,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 12,
-                    "nearestToken": "font-size:12",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 500,
-                    "nearestToken": "font-weight:500",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10,
-                    "nearestToken": "spacing:8",
-                    "distance": 2,
-                    "normalized": 1,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 37.5
-              },
-              {
-                "component": "div",
-                "instanceId": "37beefe6",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 16,
-                    "nearestToken": "spacing:16",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 16,
-                    "nearestToken": "spacing:16",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 60,
-                    "nearestToken": "spacing:64",
-                    "distance": 4,
-                    "normalized": 1,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 60,
-                    "nearestToken": "spacing:64",
-                    "distance": 4,
-                    "normalized": 1,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 6.25
-              },
-              {
-                "component": "div",
-                "instanceId": "e82a173e",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(248, 248, 248)",
-                    "nearestToken": "colors.color.background.input.hovered",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 24,
-                    "nearestToken": "spacing:24",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 24,
-                    "nearestToken": "spacing:24",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 24,
-                    "nearestToken": "spacing:24",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 24,
-                    "nearestToken": "spacing:24",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "div",
-                "instanceId": "a3599aad",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(66, 82, 110)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.pressed",
-                    "distance": 9.264453629817755,
-                    "normalized": 0.46322268149088774,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 11.580567037272193
-              }
-            ],
-            "score": 9.221761172878699
-          },
-          {
-            "component": "h1/text",
-            "instances": [
-              {
-                "component": "h1/text",
-                "instanceId": "bba02d7f",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(16, 18, 20)",
-                    "nearestToken": "theme:dark.color.blanket.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 48,
-                    "nearestToken": "font-size:32",
-                    "distance": 16,
-                    "normalized": 1
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Display",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 800,
-                    "nearestToken": "font-weight:653",
-                    "distance": 147,
-                    "normalized": 1
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 16.666666666666664
-              }
-            ],
-            "score": 16.666666666666664
-          },
-          {
-            "component": "span/text",
-            "instances": [
-              {
-                "component": "span/text",
-                "instanceId": "4d4f5f34",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(24, 104, 219)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "span/text",
-                "instanceId": "d82ec760",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(16, 18, 20)",
-                    "nearestToken": "theme:dark.color.blanket.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\"",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 700,
-                    "nearestToken": "font-weight:653",
-                    "distance": 47,
-                    "normalized": 0.47
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 3.916666666666666
-              },
-              {
-                "component": "span/text",
-                "instanceId": "e167ba63",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(16, 18, 20)",
-                    "nearestToken": "theme:dark.color.blanket.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Display\"",
-                    "nearestToken": "font-family:Charlie Display",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "span/text",
-                "instanceId": "461da4d6",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(28, 43, 66)",
-                    "nearestToken": "colors.color.background.brand.boldest.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Display\"",
-                    "nearestToken": "font-family:Charlie Display",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 500,
-                    "nearestToken": "font-weight:500",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "span/text",
-                "instanceId": "3a284169",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0.7833333333333332
-          },
-          {
-            "component": "p/text",
-            "instances": [
-              {
-                "component": "p/text",
-                "instanceId": "c26d3670",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0
-          },
-          {
-            "component": "strong/text",
-            "instances": [
-              {
-                "component": "strong/text",
-                "instanceId": "f00b3fe9",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 700,
-                    "nearestToken": "font-weight:653",
-                    "distance": 47,
-                    "normalized": 0.47
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 3.916666666666666
-              }
-            ],
-            "score": 3.916666666666666
-          },
-          {
-            "component": "footer",
-            "instances": [
-              {
-                "component": "footer",
-                "instanceId": "484866e8",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(255, 255, 255)",
-                    "nearestToken": "colors.color.background.code.default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0
-          },
-          {
-            "component": "h2/text",
-            "instances": [
-              {
-                "component": "h2/text",
-                "instanceId": "0c0244fa",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(16, 18, 20)",
-                    "nearestToken": "theme:dark.color.blanket.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": true
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 13,
-                    "nearestToken": "font-size:12",
-                    "distance": 1,
-                    "normalized": 0.5
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\"",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 700,
-                    "nearestToken": "font-weight:653",
-                    "distance": 47,
-                    "normalized": 0.47
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10.79,
-                    "nearestToken": "spacing:12",
-                    "distance": 1.2100000000000009,
-                    "normalized": 0.6050000000000004,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 10.79,
-                    "nearestToken": "spacing:12",
-                    "distance": 1.2100000000000009,
-                    "normalized": 0.6050000000000004,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 11.864583333333336
-              }
-            ],
-            "score": 11.864583333333336
-          },
-          {
-            "component": "div/text",
-            "instances": [
-              {
-                "component": "div/text",
-                "instanceId": "018ff046",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(80, 82, 88)",
-                    "nearestToken": "colors.color.background.accent.gray.bolder.hovered",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "div/text",
-                "instanceId": "cdde346d",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(66, 82, 110)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.pressed",
-                    "distance": 9.264453629817755,
-                    "normalized": 0.46322268149088774,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 11.580567037272193
-              },
-              {
-                "component": "div/text",
-                "instanceId": "603c272c",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(66, 82, 110)",
-                    "nearestToken": "colors.color.background.accent.blue.bolder.pressed",
-                    "distance": 9.264453629817755,
-                    "normalized": 0.46322268149088774,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 24,
-                    "nearestToken": "font-size:24",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 11.580567037272193
-              }
-            ],
-            "score": 7.720378024848128
-          },
-          {
-            "component": "label/text",
-            "instances": [
-              {
-                "component": "label/text",
-                "instanceId": "3bfeadaa",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(41, 42, 46)",
-                    "nearestToken": "colors.color.background.neutral.bold.[default]",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 16,
-                    "nearestToken": "font-size:16",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Charlie Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
-                    "nearestToken": "font-family:Charlie Text",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0
-          }
-        ],
-        "score": 6.579838919772682,
-        "breakdown": [
-          {
-            "property": "border-radius",
-            "meanNormalized": 0.15384615384615385,
-            "count": 26
-          },
-          {
-            "property": "font-weight",
-            "meanNormalized": 0.0926923076923077,
-            "count": 26
-          },
-          {
-            "property": "spacing",
-            "meanNormalized": 0.06350961538461539,
-            "count": 208
-          },
-          {
-            "property": "font-size",
-            "meanNormalized": 0.057692307692307696,
-            "count": 26
-          },
-          {
-            "property": "color",
-            "meanNormalized": 0.05344877094125628,
-            "count": 26
-          },
-          {
-            "property": "font-family",
-            "meanNormalized": 0,
-            "count": 26
-          },
-          {
-            "property": "background-color",
-            "meanNormalized": 0,
-            "count": 9
-          }
-        ],
-        "accessibility": [
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "25a61c3c",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "afd0aa5e",
-            "ratio": 18.772532253316175,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(16, 18, 20)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 18.8:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "685bebda",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "9968dcf8",
-            "ratio": 5.195629728468178,
-            "level": "AA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 500,
-            "color": "rgb(255, 255, 255)",
-            "effectiveBackground": "rgb(24, 104, 219)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "h1/text",
-            "instanceId": "bba02d7f",
-            "ratio": 18.772532253316175,
-            "level": "AAA",
-            "isLargeText": true,
-            "fontSize": 48,
-            "fontWeight": 800,
-            "color": "rgb(16, 18, 20)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AAA at 18.8:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "6959469d",
-            "ratio": 5.195629728468178,
-            "level": "AA",
-            "isLargeText": false,
-            "fontSize": 20,
-            "fontWeight": 500,
-            "color": "rgb(255, 255, 255)",
-            "effectiveBackground": "rgb(24, 104, 219)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "span/text",
-            "instanceId": "4d4f5f34",
-            "ratio": 5.195629728468178,
-            "level": "AA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(24, 104, 219)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "p/text",
-            "instanceId": "c26d3670",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "strong/text",
-            "instanceId": "f00b3fe9",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 700,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "a/text",
-            "instanceId": "e0146753",
-            "ratio": 5.195629728468178,
-            "level": "AA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(24, 104, 219)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": false,
-            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "span/text",
-            "instanceId": "d82ec760",
-            "ratio": 17.676318786542,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 700,
-            "color": "rgb(16, 18, 20)",
-            "effectiveBackground": "rgb(248, 248, 248)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 17.7:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "h2/text",
-            "instanceId": "0c0244fa",
-            "ratio": 17.676318786542,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 13,
-            "fontWeight": 700,
-            "color": "rgb(16, 18, 20)",
-            "effectiveBackground": "rgb(248, 248, 248)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 17.7:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "span/text",
-            "instanceId": "e167ba63",
-            "ratio": 17.676318786542,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 400,
-            "color": "rgb(16, 18, 20)",
-            "effectiveBackground": "rgb(248, 248, 248)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 17.7:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "span/text",
-            "instanceId": "461da4d6",
-            "ratio": 13.418684951835644,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 500,
-            "color": "rgb(28, 43, 66)",
-            "effectiveBackground": "rgb(248, 248, 248)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 13.4:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "div/text",
-            "instanceId": "018ff046",
-            "ratio": 7.809803365612806,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 400,
-            "color": "rgb(80, 82, 88)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 7.8:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "span/text",
-            "instanceId": "3a284169",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 400,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "label/text",
-            "instanceId": "3bfeadaa",
-            "ratio": 14.335249149356793,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 16,
-            "fontWeight": 400,
-            "color": "rgb(41, 42, 46)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 14.3:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "div/text",
-            "instanceId": "cdde346d",
-            "ratio": 7.883695877316398,
-            "level": "AAA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 400,
-            "color": "rgb(66, 82, 110)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 7.9:1"
-          },
-          {
-            "page": "https://jira.atlassian.com/",
-            "component": "div/text",
-            "instanceId": "603c272c",
-            "ratio": 7.883695877316398,
-            "level": "AAA",
-            "isLargeText": true,
-            "fontSize": 24,
-            "fontWeight": 400,
-            "color": "rgb(66, 82, 110)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 7.9:1"
-          }
-        ]
-      },
-      {
         "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
         "components": [
           {
@@ -12703,22 +9452,22 @@
         ]
       }
     ],
-    "score": 18.31298728934179,
+    "score": 22.224036745864826,
     "breakdown": [
       {
         "property": "font-family",
-        "meanNormalized": 0.7425742574257426,
-        "count": 101
-      },
-      {
-        "property": "border-radius",
-        "meanNormalized": 0.15782178217821782,
-        "count": 101
+        "meanNormalized": 1,
+        "count": 75
       },
       {
         "property": "color",
-        "meanNormalized": 0.13682439733532417,
-        "count": 101
+        "meanNormalized": 0.16572794781860098,
+        "count": 75
+      },
+      {
+        "property": "border-radius",
+        "meanNormalized": 0.1592,
+        "count": 75
       },
       {
         "property": "border-color",
@@ -12727,240 +9476,26 @@
       },
       {
         "property": "spacing",
-        "meanNormalized": 0.09370049504950496,
-        "count": 808
-      },
-      {
-        "property": "font-weight",
-        "meanNormalized": 0.042475247524752464,
-        "count": 101
+        "meanNormalized": 0.10416666666666667,
+        "count": 600
       },
       {
         "property": "background-color",
-        "meanNormalized": 0.019178636540051586,
-        "count": 24
+        "meanNormalized": 0.030685818464082536,
+        "count": 15
+      },
+      {
+        "property": "font-weight",
+        "meanNormalized": 0.025066666666666664,
+        "count": 75
       },
       {
         "property": "font-size",
-        "meanNormalized": 0.01485148514851485,
-        "count": 101
+        "meanNormalized": 0,
+        "count": 75
       }
     ],
     "worstOffenders": [
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "afd0aa5e",
-        "property": "spacing",
-        "detail": "padding-top",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-top is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "afd0aa5e",
-        "property": "spacing",
-        "detail": "padding-bottom",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-bottom is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "685bebda",
-        "property": "border-radius",
-        "detail": "border-top-left-radius",
-        "rawValue": 3,
-        "nearestToken": "border-radius:2",
-        "distance": 1,
-        "normalized": 1,
-        "humanReadable": "top-left corner radius is 3px, should be 2px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "9968dcf8",
-        "property": "border-radius",
-        "detail": "border-top-left-radius",
-        "rawValue": 10000,
-        "nearestToken": "border-radius:9999",
-        "distance": 1,
-        "normalized": 1,
-        "humanReadable": "top-left corner radius is 10000px, should be 9999px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "9968dcf8",
-        "property": "spacing",
-        "detail": "padding-right",
-        "rawValue": 22,
-        "nearestToken": "spacing:20",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-right is 22px, should be 20px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "9968dcf8",
-        "property": "spacing",
-        "detail": "padding-left",
-        "rawValue": 22,
-        "nearestToken": "spacing:20",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-left is 22px, should be 20px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "6959469d",
-        "property": "border-radius",
-        "detail": "border-top-left-radius",
-        "rawValue": 10000,
-        "nearestToken": "border-radius:9999",
-        "distance": 1,
-        "normalized": 1,
-        "humanReadable": "top-left corner radius is 10000px, should be 9999px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "6959469d",
-        "property": "spacing",
-        "detail": "padding-right",
-        "rawValue": 22,
-        "nearestToken": "spacing:20",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-right is 22px, should be 20px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "a/text",
-        "instanceId": "6959469d",
-        "property": "spacing",
-        "detail": "padding-left",
-        "rawValue": 22,
-        "nearestToken": "spacing:20",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-left is 22px, should be 20px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "3b70567f",
-        "property": "border-radius",
-        "detail": "border-top-left-radius",
-        "rawValue": 40,
-        "nearestToken": "border-radius:16",
-        "distance": 24,
-        "normalized": 1,
-        "humanReadable": "top-left corner radius is 40px, should be 16px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "3b70567f",
-        "property": "spacing",
-        "detail": "padding-top",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-top is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "3b70567f",
-        "property": "spacing",
-        "detail": "padding-right",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-right is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "3b70567f",
-        "property": "spacing",
-        "detail": "padding-bottom",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-bottom is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "3b70567f",
-        "property": "spacing",
-        "detail": "padding-left",
-        "rawValue": 10,
-        "nearestToken": "spacing:8",
-        "distance": 2,
-        "normalized": 1,
-        "humanReadable": "padding-left is 10px, should be 8px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "37beefe6",
-        "property": "spacing",
-        "detail": "margin-right",
-        "rawValue": 60,
-        "nearestToken": "spacing:64",
-        "distance": 4,
-        "normalized": 1,
-        "humanReadable": "margin-right is 60px, should be 64px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "div",
-        "instanceId": "37beefe6",
-        "property": "spacing",
-        "detail": "margin-left",
-        "rawValue": 60,
-        "nearestToken": "spacing:64",
-        "distance": 4,
-        "normalized": 1,
-        "humanReadable": "margin-left is 60px, should be 64px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "h1/text",
-        "instanceId": "bba02d7f",
-        "property": "font-size",
-        "rawValue": 48,
-        "nearestToken": "font-size:32",
-        "distance": 16,
-        "normalized": 1,
-        "humanReadable": "font size is 48px, should be 32px"
-      },
-      {
-        "page": "https://jira.atlassian.com/",
-        "component": "h1/text",
-        "instanceId": "bba02d7f",
-        "property": "font-weight",
-        "rawValue": 800,
-        "nearestToken": "font-weight:653",
-        "distance": 147,
-        "normalized": 1,
-        "humanReadable": "font weight is 800, should be 653 (lighter than what's used)"
-      },
       {
         "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
         "component": "nav",
@@ -13327,71 +9862,221 @@
         "distance": 1,
         "normalized": 1,
         "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "button",
+        "instanceId": "bc8cfc70",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "button",
+        "instanceId": "bc8cfc70",
+        "property": "spacing",
+        "detail": "padding-right",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "padding-right is 10px, should be 8px"
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "button",
+        "instanceId": "bc8cfc70",
+        "property": "spacing",
+        "detail": "padding-left",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "padding-left is 10px, should be 8px"
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "button/text",
+        "instanceId": "5421472d",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "button/text",
+        "instanceId": "5421472d",
+        "property": "spacing",
+        "detail": "margin-left",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "margin-left is 10px, should be 8px"
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "iframe/text",
+        "instanceId": "0cfb23cc",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "dt/text",
+        "instanceId": "7e829f33",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "dt/text",
+        "instanceId": "51310ad4",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "dd/text",
+        "instanceId": "4beadaf7",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
+        "component": "li/text",
+        "instanceId": "a0f5f216",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "nav",
+        "instanceId": "bef0ff3e",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "nav",
+        "instanceId": "bef0ff3e",
+        "property": "spacing",
+        "detail": "padding-right",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "padding-right is 10px, should be 8px"
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "nav",
+        "instanceId": "bef0ff3e",
+        "property": "spacing",
+        "detail": "padding-left",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "padding-left is 10px, should be 8px"
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "span/text",
+        "instanceId": "7e0e6678",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "span/text",
+        "instanceId": "715483ea",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "span/text",
+        "instanceId": "144f366f",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "a/text",
+        "instanceId": "9438a088",
+        "property": "font-family",
+        "rawValue": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "nearestToken": "font-family:Atlassian Sans",
+        "distance": 1,
+        "normalized": 1,
+        "humanReadable": "using \"-apple-system\" instead of \"Atlassian Sans\""
+      },
+      {
+        "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+        "component": "a/text",
+        "instanceId": "9438a088",
+        "property": "spacing",
+        "detail": "padding-left",
+        "rawValue": 10,
+        "nearestToken": "spacing:8",
+        "distance": 2,
+        "normalized": 1,
+        "humanReadable": "padding-left is 10px, should be 8px"
       }
     ],
-    "unstablePages": [],
+    "unstablePages": [
+      "https://jira.atlassian.com/"
+    ],
     "accessibility": {
-      "totalChecked": 73,
-      "passCount": 73,
+      "totalChecked": 54,
+      "passCount": 54,
       "failCount": 0,
       "worstOffenders": [
         {
-          "page": "https://jira.atlassian.com/",
-          "component": "a/text",
-          "instanceId": "9968dcf8",
-          "ratio": 5.195629728468178,
-          "level": "AA",
-          "isLargeText": false,
-          "fontSize": 16,
-          "fontWeight": 500,
-          "color": "rgb(255, 255, 255)",
-          "effectiveBackground": "rgb(24, 104, 219)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "a/text",
-          "instanceId": "6959469d",
-          "ratio": 5.195629728468178,
-          "level": "AA",
-          "isLargeText": false,
-          "fontSize": 20,
-          "fontWeight": 500,
-          "color": "rgb(255, 255, 255)",
-          "effectiveBackground": "rgb(24, 104, 219)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "span/text",
-          "instanceId": "4d4f5f34",
-          "ratio": 5.195629728468178,
-          "level": "AA",
-          "isLargeText": false,
-          "fontSize": 16,
-          "fontWeight": 400,
-          "color": "rgb(24, 104, 219)",
-          "effectiveBackground": "rgb(255, 255, 255)",
-          "backgroundResolved": false,
-          "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "a/text",
-          "instanceId": "e0146753",
-          "ratio": 5.195629728468178,
-          "level": "AA",
-          "isLargeText": false,
-          "fontSize": 16,
-          "fontWeight": 400,
-          "color": "rgb(24, 104, 219)",
-          "effectiveBackground": "rgb(255, 255, 255)",
-          "backgroundResolved": false,
-          "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-        },
-        {
           "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
           "component": "button/text",
           "instanceId": "5421472d",
@@ -13672,48 +10357,6 @@
           "humanReadable": "text here passes AAA at 7.7:1"
         },
         {
-          "page": "https://jira.atlassian.com/",
-          "component": "div/text",
-          "instanceId": "018ff046",
-          "ratio": 7.809803365612806,
-          "level": "AAA",
-          "isLargeText": false,
-          "fontSize": 14,
-          "fontWeight": 400,
-          "color": "rgb(80, 82, 88)",
-          "effectiveBackground": "rgb(255, 255, 255)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AAA at 7.8:1"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "div/text",
-          "instanceId": "cdde346d",
-          "ratio": 7.883695877316398,
-          "level": "AAA",
-          "isLargeText": false,
-          "fontSize": 14,
-          "fontWeight": 400,
-          "color": "rgb(66, 82, 110)",
-          "effectiveBackground": "rgb(255, 255, 255)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AAA at 7.9:1"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "div/text",
-          "instanceId": "603c272c",
-          "ratio": 7.883695877316398,
-          "level": "AAA",
-          "isLargeText": true,
-          "fontSize": 24,
-          "fontWeight": 400,
-          "color": "rgb(66, 82, 110)",
-          "effectiveBackground": "rgb(255, 255, 255)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AAA at 7.9:1"
-        },
-        {
           "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
           "component": "span/text",
           "instanceId": "7e0e6678",
@@ -13880,20 +10523,6 @@
           "effectiveBackground": "rgb(247, 248, 249)",
           "backgroundResolved": true,
           "humanReadable": "text here passes AAA at 13.3:1"
-        },
-        {
-          "page": "https://jira.atlassian.com/",
-          "component": "span/text",
-          "instanceId": "461da4d6",
-          "ratio": 13.418684951835644,
-          "level": "AAA",
-          "isLargeText": false,
-          "fontSize": 14,
-          "fontWeight": 500,
-          "color": "rgb(28, 43, 66)",
-          "effectiveBackground": "rgb(248, 248, 248)",
-          "backgroundResolved": true,
-          "humanReadable": "text here passes AAA at 13.4:1"
         },
         {
           "page": "https://jira.atlassian.com/projects/JRACLOUD/summary",
@@ -14025,6 +10654,118 @@
           "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
           "component": "p/text",
           "instanceId": "3ac74f99",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+          "component": "b/text",
+          "instanceId": "2d7f4fe2",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 700,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+          "component": "iframe/text",
+          "instanceId": "0cfb23cc",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+          "component": "dt/text",
+          "instanceId": "7e829f33",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+          "component": "dt/text",
+          "instanceId": "51310ad4",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/CONFCLOUD/summary",
+          "component": "dd/text",
+          "instanceId": "4beadaf7",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/JSWCLOUD/summary",
+          "component": "section/text",
+          "instanceId": "9e197e04",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": false,
+          "fontSize": 14,
+          "fontWeight": 400,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/JSWCLOUD/summary",
+          "component": "span/text",
+          "instanceId": "144f366f",
+          "ratio": 14.102034448456891,
+          "level": "AAA",
+          "isLargeText": true,
+          "fontSize": 24,
+          "fontWeight": 500,
+          "color": "rgb(23, 43, 77)",
+          "effectiveBackground": "rgb(255, 255, 255)",
+          "backgroundResolved": true,
+          "humanReadable": "text here passes AAA at 14.1:1"
+        },
+        {
+          "page": "https://jira.atlassian.com/projects/JSWCLOUD/summary",
+          "component": "div/text",
+          "instanceId": "9f0e7484",
           "ratio": 14.102034448456891,
           "level": "AAA",
           "isLargeText": false,

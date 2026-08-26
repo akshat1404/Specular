@@ -17019,6 +17019,131 @@
               },
               {
                 "component": "div",
+                "instanceId": "50a5c0cd",
+                "deviations": [
+                  {
+                    "property": "color",
+                    "rawValue": "rgb(89, 99, 110)",
+                    "nearestToken": "colors.ansi-gray",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false
+                  },
+                  {
+                    "property": "background-color",
+                    "rawValue": "rgb(246, 248, 250)",
+                    "nearestToken": "colors.bgColor-inset",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false
+                  },
+                  {
+                    "property": "border-color",
+                    "rawValue": "rgb(209, 217, 224)",
+                    "nearestToken": "colors.borderColor-default",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false,
+                    "detail": "border-top-color"
+                  },
+                  {
+                    "property": "border-radius",
+                    "rawValue": 6,
+                    "nearestToken": "border-radius:6",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "border-top-left-radius"
+                  },
+                  {
+                    "property": "font-size",
+                    "rawValue": 12,
+                    "nearestToken": "font-size:12",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-family",
+                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+                    "nearestToken": "font-family:Mona Sans VF",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-weight",
+                    "rawValue": 400,
+                    "nearestToken": "font-weight:400",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 4,
+                    "nearestToken": "spacing:4",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 4,
+                    "nearestToken": "spacing:4",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 4,
+                    "nearestToken": "spacing:4",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 4,
+                    "nearestToken": "spacing:4",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-left"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-left"
+                  }
+                ],
+                "score": 0
+              },
+              {
+                "component": "div",
                 "instanceId": "699c21cf",
                 "deviations": [
                   {
@@ -17605,12 +17730,12 @@
               },
               {
                 "component": "h2/text",
-                "instanceId": "a2c423ec",
+                "instanceId": "c7172c73",
                 "deviations": [
                   {
                     "property": "color",
-                    "rawValue": "rgb(31, 35, 40)",
-                    "nearestToken": "colors.ansi-black",
+                    "rawValue": "rgb(89, 99, 110)",
+                    "nearestToken": "colors.ansi-gray",
                     "distance": 0,
                     "normalized": 0,
                     "variantMatch": false
@@ -17713,12 +17838,12 @@
               },
               {
                 "component": "h2/text",
-                "instanceId": "c7172c73",
+                "instanceId": "a2c423ec",
                 "deviations": [
                   {
                     "property": "color",
-                    "rawValue": "rgb(89, 99, 110)",
-                    "nearestToken": "colors.ansi-gray",
+                    "rawValue": "rgb(31, 35, 40)",
+                    "nearestToken": "colors.ansi-black",
                     "distance": 0,
                     "normalized": 0,
                     "variantMatch": false
@@ -24132,368 +24257,6 @@
             "score": 2.727207971105397
           },
           {
-            "component": "table",
-            "instances": [
-              {
-                "component": "table",
-                "instanceId": "91a4aab2",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(31, 35, 40)",
-                    "nearestToken": "colors.ansi-black",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-color",
-                    "rawValue": "rgb(209, 217, 224)",
-                    "nearestToken": "colors.borderColor-default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false,
-                    "detail": "border-top-color"
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 6,
-                    "nearestToken": "border-radius:6",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
-                    "nearestToken": "font-family:Mona Sans VF",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0
-          },
-          {
-            "component": "td",
-            "instances": [
-              {
-                "component": "td",
-                "instanceId": "88d9243c",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(89, 99, 110)",
-                    "nearestToken": "colors.ansi-gray",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "background-color",
-                    "rawValue": "rgb(246, 248, 250)",
-                    "nearestToken": "colors.bgColor-inset",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 6,
-                    "nearestToken": "border-radius:6",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 12,
-                    "nearestToken": "font-size:12",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
-                    "nearestToken": "font-family:Mona Sans VF",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 4,
-                    "nearestToken": "spacing:4",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 4,
-                    "nearestToken": "spacing:4",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 4,
-                    "nearestToken": "spacing:4",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 4,
-                    "nearestToken": "spacing:4",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              },
-              {
-                "component": "td",
-                "instanceId": "fbdf4352",
-                "deviations": [
-                  {
-                    "property": "color",
-                    "rawValue": "rgb(31, 35, 40)",
-                    "nearestToken": "colors.ansi-black",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false
-                  },
-                  {
-                    "property": "border-color",
-                    "rawValue": "rgb(209, 217, 224)",
-                    "nearestToken": "colors.borderColor-default",
-                    "distance": 0,
-                    "normalized": 0,
-                    "variantMatch": false,
-                    "detail": "border-top-color"
-                  },
-                  {
-                    "property": "border-radius",
-                    "rawValue": 0,
-                    "nearestToken": "border-radius:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "border-top-left-radius"
-                  },
-                  {
-                    "property": "font-size",
-                    "rawValue": 14,
-                    "nearestToken": "font-size:14",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-family",
-                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
-                    "nearestToken": "font-family:Mona Sans VF",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "font-weight",
-                    "rawValue": 400,
-                    "nearestToken": "font-weight:400",
-                    "distance": 0,
-                    "normalized": 0
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 16,
-                    "nearestToken": "spacing:16",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "padding-left"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-top"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-right"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-bottom"
-                  },
-                  {
-                    "property": "spacing",
-                    "rawValue": 0,
-                    "nearestToken": "spacing:0",
-                    "distance": 0,
-                    "normalized": 0,
-                    "detail": "margin-left"
-                  }
-                ],
-                "score": 0
-              }
-            ],
-            "score": 0
-          },
-          {
             "component": "relative-time/text",
             "instances": [
               {
@@ -24673,6 +24436,129 @@
                     "property": "spacing",
                     "rawValue": 0,
                     "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-left"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-left"
+                  }
+                ],
+                "score": 0
+              }
+            ],
+            "score": 0
+          },
+          {
+            "component": "td",
+            "instances": [
+              {
+                "component": "td",
+                "instanceId": "fbdf4352",
+                "deviations": [
+                  {
+                    "property": "color",
+                    "rawValue": "rgb(31, 35, 40)",
+                    "nearestToken": "colors.ansi-black",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false
+                  },
+                  {
+                    "property": "border-color",
+                    "rawValue": "rgb(209, 217, 224)",
+                    "nearestToken": "colors.borderColor-default",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false,
+                    "detail": "border-top-color"
+                  },
+                  {
+                    "property": "border-radius",
+                    "rawValue": 0,
+                    "nearestToken": "border-radius:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "border-top-left-radius"
+                  },
+                  {
+                    "property": "font-size",
+                    "rawValue": 14,
+                    "nearestToken": "font-size:14",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-family",
+                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+                    "nearestToken": "font-family:Mona Sans VF",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-weight",
+                    "rawValue": 400,
+                    "nearestToken": "font-weight:400",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 16,
+                    "nearestToken": "spacing:16",
                     "distance": 0,
                     "normalized": 0,
                     "detail": "padding-left"
@@ -25172,7 +25058,7 @@
             "score": 0
           }
         ],
-        "score": 1.1187642410788183,
+        "score": 1.1886870061462445,
         "breakdown": [
           {
             "property": "background-color",
@@ -25186,33 +25072,33 @@
           },
           {
             "property": "font-family",
-            "meanNormalized": 0.04597701149425287,
-            "count": 87
+            "meanNormalized": 0.046511627906976744,
+            "count": 86
           },
           {
             "property": "font-size",
-            "meanNormalized": 0.034482758620689655,
-            "count": 87
+            "meanNormalized": 0.03488372093023256,
+            "count": 86
           },
           {
             "property": "border-radius",
-            "meanNormalized": 0.025041666666667572,
-            "count": 80
+            "meanNormalized": 0.025358649789030453,
+            "count": 79
           },
           {
             "property": "spacing",
-            "meanNormalized": 0.01293103448275862,
-            "count": 696
+            "meanNormalized": 0.01308139534883721,
+            "count": 688
           },
           {
             "property": "color",
             "meanNormalized": 0,
-            "count": 87
+            "count": 86
           },
           {
             "property": "font-weight",
             "meanNormalized": 0,
-            "count": 87
+            "count": 86
           }
         ],
         "accessibility": [
@@ -25485,20 +25371,6 @@
           {
             "page": "https://github.com/torvalds/linux",
             "component": "h2/text",
-            "instanceId": "a2c423ec",
-            "ratio": 15.797619425332647,
-            "level": "AAA",
-            "isLargeText": true,
-            "fontSize": 32,
-            "fontWeight": 600,
-            "color": "rgb(31, 35, 40)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AAA at 15.8:1"
-          },
-          {
-            "page": "https://github.com/torvalds/linux",
-            "component": "h2/text",
             "instanceId": "c7172c73",
             "ratio": 5.743198270382528,
             "level": "AAA",
@@ -25596,6 +25468,20 @@
           },
           {
             "page": "https://github.com/torvalds/linux",
+            "component": "h2/text",
+            "instanceId": "a2c423ec",
+            "ratio": 15.797619425332647,
+            "level": "AAA",
+            "isLargeText": true,
+            "fontSize": 32,
+            "fontWeight": 600,
+            "color": "rgb(31, 35, 40)",
+            "effectiveBackground": "rgb(255, 255, 255)",
+            "backgroundResolved": true,
+            "humanReadable": "text here passes AAA at 15.8:1"
+          },
+          {
+            "page": "https://github.com/torvalds/linux",
             "component": "a/text",
             "instanceId": "ebcbfa2b",
             "ratio": 15.797619425332647,
@@ -25638,20 +25524,6 @@
           },
           {
             "page": "https://github.com/torvalds/linux",
-            "component": "a/text",
-            "instanceId": "b646e24f",
-            "ratio": 5.192060987927794,
-            "level": "AA",
-            "isLargeText": false,
-            "fontSize": 14,
-            "fontWeight": 400,
-            "color": "rgb(9, 105, 218)",
-            "effectiveBackground": "rgb(255, 255, 255)",
-            "backgroundResolved": true,
-            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
-          },
-          {
-            "page": "https://github.com/torvalds/linux",
             "component": "code/text",
             "instanceId": "b7bc77fb",
             "ratio": 6.114136455475549,
@@ -25663,6 +25535,20 @@
             "effectiveBackground": "rgb(255, 255, 255)",
             "backgroundResolved": true,
             "humanReadable": "text here passes AA at 6.1:1 but falls short of AAA (needs 7:1)"
+          },
+          {
+            "page": "https://github.com/torvalds/linux",
+            "component": "a/text",
+            "instanceId": "b646e24f",
+            "ratio": 5.192060987927794,
+            "level": "AA",
+            "isLargeText": false,
+            "fontSize": 14,
+            "fontWeight": 400,
+            "color": "rgb(9, 105, 218)",
+            "effectiveBackground": "rgb(255, 255, 255)",
+            "backgroundResolved": true,
+            "humanReadable": "text here passes AA at 5.2:1 but falls short of AAA (needs 7:1)"
           },
           {
             "page": "https://github.com/torvalds/linux",
@@ -47030,6 +46916,122 @@
               },
               {
                 "component": "span",
+                "instanceId": "5201acc5",
+                "deviations": [
+                  {
+                    "property": "color",
+                    "rawValue": "rgb(89, 99, 110)",
+                    "nearestToken": "colors.ansi-gray",
+                    "distance": 0,
+                    "normalized": 0,
+                    "variantMatch": false
+                  },
+                  {
+                    "property": "background-color",
+                    "rawValue": "rgb(64, 196, 99)",
+                    "nearestToken": "colors.borderColor-open-muted",
+                    "distance": 1.5713813082251495,
+                    "normalized": 0.07856906541125748,
+                    "variantMatch": false
+                  },
+                  {
+                    "property": "border-radius",
+                    "rawValue": 6,
+                    "nearestToken": "border-radius:6",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "border-top-left-radius"
+                  },
+                  {
+                    "property": "font-size",
+                    "rawValue": 14,
+                    "nearestToken": "font-size:14",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-family",
+                    "rawValue": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+                    "nearestToken": "font-family:Mona Sans VF",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "font-weight",
+                    "rawValue": 400,
+                    "nearestToken": "font-weight:400",
+                    "distance": 0,
+                    "normalized": 0
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "padding-left"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-top"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-right"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-bottom"
+                  },
+                  {
+                    "property": "spacing",
+                    "rawValue": 0,
+                    "nearestToken": "spacing:0",
+                    "distance": 0,
+                    "normalized": 0,
+                    "detail": "margin-left"
+                  }
+                ],
+                "score": 0.9821133176407185
+              },
+              {
+                "component": "span",
                 "instanceId": "5ff4514d",
                 "deviations": [
                   {
@@ -47145,7 +47147,7 @@
                 "score": 1.4909500118784396
               }
             ],
-            "score": 1.5159501805793412
+            "score": 1.3824909648446855
           },
           {
             "component": "caption/text",
@@ -47391,7 +47393,7 @@
               },
               {
                 "component": "td",
-                "instanceId": "2cbb00eb",
+                "instanceId": "3bf7f544",
                 "deviations": [
                   {
                     "property": "color",
@@ -47403,8 +47405,8 @@
                   },
                   {
                     "property": "background-color",
-                    "rawValue": "rgb(74, 194, 107)",
-                    "nearestToken": "colors.borderColor-open-muted",
+                    "rawValue": "rgb(45, 164, 78)",
+                    "nearestToken": "colors.contribution-default-bgColor-3",
                     "distance": 0,
                     "normalized": 0,
                     "variantMatch": false
@@ -47516,7 +47518,7 @@
               },
               {
                 "component": "td",
-                "instanceId": "3bf7f544",
+                "instanceId": "2cbb00eb",
                 "deviations": [
                   {
                     "property": "color",
@@ -47528,8 +47530,8 @@
                   },
                   {
                     "property": "background-color",
-                    "rawValue": "rgb(45, 164, 78)",
-                    "nearestToken": "colors.contribution-default-bgColor-3",
+                    "rawValue": "rgb(74, 194, 107)",
+                    "nearestToken": "colors.borderColor-open-muted",
                     "distance": 0,
                     "normalized": 0,
                     "variantMatch": false
@@ -48229,12 +48231,12 @@
             "score": 0
           }
         ],
-        "score": 1.6702596210271152,
+        "score": 1.6624090789250765,
         "breakdown": [
           {
             "property": "font-family",
-            "meanNormalized": 0.05,
-            "count": 80
+            "meanNormalized": 0.04938271604938271,
+            "count": 81
           },
           {
             "property": "border-color",
@@ -48243,33 +48245,33 @@
           },
           {
             "property": "font-size",
-            "meanNormalized": 0.038125,
-            "count": 80
+            "meanNormalized": 0.03765432098765432,
+            "count": 81
           },
           {
             "property": "border-radius",
-            "meanNormalized": 0.034761904761907596,
-            "count": 77
+            "meanNormalized": 0.034316239316242114,
+            "count": 78
           },
           {
             "property": "background-color",
-            "meanNormalized": 0.02036142375913336,
-            "count": 34
+            "meanNormalized": 0.022024499234908335,
+            "count": 35
           },
           {
             "property": "spacing",
-            "meanNormalized": 0.016440624999999997,
-            "count": 640
+            "meanNormalized": 0.01623765432098765,
+            "count": 648
           },
           {
             "property": "color",
             "meanNormalized": 0,
-            "count": 80
+            "count": 81
           },
           {
             "property": "font-weight",
             "meanNormalized": 0,
-            "count": 80
+            "count": 81
           }
         ],
         "accessibility": [
@@ -49004,7 +49006,7 @@
         ]
       }
     ],
-    "score": 5.2769287170201205,
+    "score": 5.287274087514352,
     "breakdown": [
       {
         "property": "font-family",
@@ -49028,8 +49030,8 @@
       },
       {
         "property": "background-color",
-        "meanNormalized": 0.04183598912274819,
-        "count": 143
+        "meanNormalized": 0.04209107993030728,
+        "count": 144
       },
       {
         "property": "color",

@@ -20,14 +20,14 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 | property | mean deviation | n |
 |---|---|---|
-| font-size | 0.06 | 290 |
-| font-family | 0.05 | 290 |
-| border-radius | 0.04 | 290 |
-| spacing | 0.03 | 2320 |
-| font-weight | 0.00 | 290 |
-| color | 0.00 | 290 |
-| background-color | 0.00 | 99 |
-| border-color | 0.00 | 16 |
+| font-size | 0.06 | 294 |
+| border-radius | 0.04 | 294 |
+| font-family | 0.03 | 294 |
+| spacing | 0.02 | 2352 |
+| font-weight | 0.00 | 294 |
+| color | 0.00 | 294 |
+| background-color | 0.00 | 103 |
+| border-color | 0.00 | 19 |
 
 ## Worst offenders
 
@@ -62,13 +62,13 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 | padding-bottom is 360px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-bottom): 360 | spacing:160 | 1.00 |
 | padding-left is 192px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-left): 192 | spacing:160 | 1.00 |
 | font size is 47.2501px, should be 42px | https://www.ibm.com/products | h2/text | 3ca59393 | font-size: 47.2501 | font-size:42 | 1.00 |
-| font size is 47.2501px, should be 42px | https://www.ibm.com/consulting | span/text | 4022d6c4 | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/consulting | span/text | 0c9fbea3 | font-size: 47.2501 | font-size:42 | 1.00 |
 
 ## Accessibility — WCAG contrast
 
 _Separate from the deviation score above: this checks captured text against WCAG 2.1's own contrast thresholds, independent of the brand spec — an element can be on-spec and still fail contrast, or off-spec and still pass._
 
-Checked: 189, passing: 182, failing: 7
+Checked: 189, passing: 180, failing: 9
 
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|
@@ -77,15 +77,14 @@ Checked: 189, passing: 182, failing: 7
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.1:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.1:1 | fail | — |
+| text here is barely readable against its background — 1.7:1, needs at least 4.5:1 for AA | https://www.ibm.com/products | span/text | 1.7:1 | fail | — |
+| text here is barely readable against its background — 1.7:1, needs at least 4.5:1 for AA | https://www.ibm.com/cloud | span/text | 1.7:1 | fail | — |
 | text here is barely readable against its background — 1.9:1, needs at least 4.5:1 for AA | https://www.ibm.com/ | button/text | 1.9:1 | fail | — |
 | text here is barely readable against its background — 1.9:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | button/text | 1.9:1 | fail | — |
 | text here passes AA at 4.5:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | span/text | 4.5:1 | AA | — |
 | text here passes AA at 4.5:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 4.5:1 | AA | — |
 | text here passes AA at 4.5:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 4.5:1 | AA | — |
 | text here passes AA at 4.5:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | span/text | 4.5:1 | AA | — |
-| text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | p/text | 4.6:1 | AA | — |
-| text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 4.6:1 | AA | — |
-| text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 4.6:1 | AA | — |
 | text here passes AA at 4.9:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 4.9:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/ | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/ | p/text | 5.0:1 | AA | — |
@@ -93,27 +92,29 @@ Checked: 189, passing: 182, failing: 7
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/ | a/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/products | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/products | c4d-text-cta/text | 5.0:1 | AA | — |
-| text here passes AAA at 5.0:1 | https://www.ibm.com/consulting | span/text | 5.0:1 | AAA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | a/text | 5.0:1 | AA | — |
-| text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | a/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 5.0:1 | AA | — |
+| text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 5.0:1 | AA | — |
+| text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | span/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/ | c4d-text-cta/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/ | a/text | 5.0:1 | AA | — |
-| text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | a/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | c4d-text-cta/text | 5.0:1 | AA | — |
+| text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | c4d-link-list-item-cta/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | a/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | c4d-text-cta/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | c4d-link-list-item-cta/text | 5.0:1 | AA | — |
 | text here passes AA at 5.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 5.0:1 | AA | — |
 | text here passes AA at 6.0:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | span/text | 6.0:1 | AA | — |
+| text here passes AA at 6.4:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/cloud | span/text | 6.4:1 | AA | — |
 | text here passes AA at 6.4:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/consulting | span/text | 6.4:1 | AA | — |
+| text here passes AA at 6.7:1 but falls short of AAA (needs 7:1) | https://www.ibm.com/think | a/text | 6.7:1 | AA | — |
 | text here passes AAA at 7.1:1 | https://www.ibm.com/ | div/text | 7.1:1 | AAA | — |
 | text here passes AAA at 7.1:1 | https://www.ibm.com/ | div/text | 7.1:1 | AAA | — |
 | text here passes AAA at 7.1:1 | https://www.ibm.com/think | span/text | 7.1:1 | AAA | — |
@@ -121,4 +122,3 @@ Checked: 189, passing: 182, failing: 7
 | text here passes AAA at 7.8:1 | https://www.ibm.com/products | span/text | 7.8:1 | AAA | — |
 | text here passes AAA at 7.8:1 | https://www.ibm.com/consulting | span/text | 7.8:1 | AAA | — |
 | text here passes AAA at 7.8:1 | https://www.ibm.com/cloud | h2/text | 7.8:1 | AAA | — |
-| text here passes AAA at 7.8:1 | https://www.ibm.com/cloud | p/text | 7.8:1 | AAA | — |

@@ -2,7 +2,7 @@
 
 [**View the full report**](./report.html) — one self-contained file with the score, plain-English breakdown, and screenshots; opens directly in a browser from anywhere, no other files needed.
 
-**Score: 12.3 / 100** — 0 is fully on-spec, 100 is maximally deviant.
+**Score: 12.4 / 100** — 0 is fully on-spec, 100 is maximally deviant.
 
 Pages scored: 5
 
@@ -20,13 +20,13 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 | property | mean deviation | n |
 |---|---|---|
-| font-family | 1.00 | 212 |
-| font-size | 0.32 | 212 |
-| border-radius | 0.03 | 212 |
-| spacing | 0.02 | 1694 |
+| font-family | 1.00 | 211 |
+| font-size | 0.33 | 211 |
+| border-radius | 0.03 | 211 |
+| spacing | 0.03 | 1686 |
 | background-color | 0.01 | 63 |
-| color | 0.01 | 212 |
-| font-weight | 0.01 | 212 |
+| color | 0.01 | 211 |
+| font-weight | 0.01 | 211 |
 | border-color | 0.00 | 8 |
 
 ## Worst offenders
@@ -68,7 +68,7 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 _Separate from the deviation score above: this checks captured text against WCAG 2.1's own contrast thresholds, independent of the brand spec — an element can be on-spec and still fail contrast, or off-spec and still pass._
 
-Checked: 146, passing: 142, failing: 4
+Checked: 145, passing: 141, failing: 4
 
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|
@@ -100,21 +100,9 @@ Checked: 146, passing: 142, failing: 4
 | text here passes AAA at 7.0:1 | https://business.pinterest.com/en-in/how-pinterest-works/ | span/text | 7.0:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/ | p/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/how-pinterest-works/ | p/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | span/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | span/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | b/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | p/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | sup/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | b/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | p/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | div/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | p/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | div/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | u/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | a/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | span/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | u/text | 16.7:1 | AAA | — |
-| text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | a/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/advertise/ | p/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/success-stories/ | p/text | 16.7:1 | AAA | — |
 | text here passes AAA at 16.7:1 | https://business.pinterest.com/en-in/guides-and-education/ | p/text | 16.7:1 | AAA | — |
@@ -122,3 +110,15 @@ Checked: 146, passing: 142, failing: 4
 | text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/ | p/text | 17.2:1 | AAA | — |
 | text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/ | b/text | 17.2:1 | AAA | — |
 | text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/ | span/text | 17.2:1 | AAA | — |
+| text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/guides-and-education/ | b/text | 17.2:1 | AAA | — |
+| text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/guides-and-education/ | div/text | 17.2:1 | AAA | — |
+| text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/guides-and-education/ | p/text | 17.2:1 | AAA | — |
+| text here passes AAA at 17.2:1 | https://business.pinterest.com/en-in/guides-and-education/ | a/text | 17.2:1 | AAA | — |
+| text here passes AAA at 17.9:1 | https://business.pinterest.com/en-in/success-stories/ | h1/text | 17.9:1 | AAA | — |
+| text here passes AAA at 17.9:1 | https://business.pinterest.com/en-in/success-stories/ | b/text | 17.9:1 | AAA | — |
+| text here passes AAA at 17.9:1 | https://business.pinterest.com/en-in/success-stories/ | span/text | 17.9:1 | AAA | — |
+| text here passes AAA at 18.9:1 | https://business.pinterest.com/en-in/ | b/text | 18.9:1 | AAA | — |
+| text here passes AAA at 18.9:1 | https://business.pinterest.com/en-in/ | span/text | 18.9:1 | AAA | — |
+| text here passes AAA at 18.9:1 | https://business.pinterest.com/en-in/ | span/text | 18.9:1 | AAA | — |
+| text here passes AAA at 18.9:1 | https://business.pinterest.com/en-in/ | span/text | 18.9:1 | AAA | — |
+| text here passes AAA at 18.9:1 | https://business.pinterest.com/en-in/ | b/text | 18.9:1 | AAA | — |

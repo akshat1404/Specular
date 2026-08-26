@@ -25,7 +25,7 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 | font-size | 0.09 | 395 |
 | border-color | 0.07 | 94 |
 | border-radius | 0.06 | 384 |
-| background-color | 0.04 | 143 |
+| background-color | 0.04 | 144 |
 | color | 0.04 | 395 |
 | spacing | 0.03 | 3160 |
 | font-weight | 0.01 | 395 |
