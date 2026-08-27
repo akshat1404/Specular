@@ -31,38 +31,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | a/text | 4f16eaa0 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | a/text | 107cf6bf | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | header | 1c1269c5 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | nav | e3747254 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | span/text | e4c2d8fe | font-size: 16 | font-size:14 | 1.00 |
-| margin-top is -1px, should be 0px | https://shopify.dev/docs/api/polaris | span/text | e4c2d8fe | spacing (margin-top): -1 | spacing:0 | 1.00 |
-| margin-right is -1px, should be 0px | https://shopify.dev/docs/api/polaris | span/text | e4c2d8fe | spacing (margin-right): -1 | spacing:0 | 1.00 |
-| margin-bottom is -1px, should be 0px | https://shopify.dev/docs/api/polaris | span/text | e4c2d8fe | spacing (margin-bottom): -1 | spacing:0 | 1.00 |
-| margin-left is -1px, should be 0px | https://shopify.dev/docs/api/polaris | span/text | e4c2d8fe | spacing (margin-left): -1 | spacing:0 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | span/text | 95184ef3 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | span/text | 4fdb2281 | font-size: 16 | font-size:14 | 1.00 |
-| using "JetBrains Mono" instead of "Inter" | https://shopify.dev/docs/api/polaris | kbd/text | cc1348ea | font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace | font-family:Inter | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | li/text | ad1895b0 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 846c252f | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | f3bf3349 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | adb20d09 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 09c47f82 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 5dc62e01 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 32px, should be 30px | https://shopify.dev/docs/api/polaris | h1/text | 3f8254dd | font-size: 32 | font-size:30 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | p/text | b7a25426 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | footer | b0c27205 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 4f16eaa0 | font-size: 16 | font-size:14 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 107cf6bf | font-size: 16 | font-size:14 | 1.00 |
 | font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 753f0985 | font-size: 16 | font-size:14 | 1.00 |
 | padding-right is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 753f0985 | spacing (padding-right): 36 | spacing:32 | 1.00 |
 | padding-left is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 753f0985 | spacing (padding-left): 36 | spacing:32 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 09c47f82 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | header | 1c1269c5 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | nav | e3747254 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | header | 1c1269c5 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | nav | e3747254 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 0e2d8e55 | font-size: 16 | font-size:14 | 1.00 |
+| padding-right is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 0e2d8e55 | spacing (padding-right): 36 | spacing:32 | 1.00 |
+| padding-left is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 0e2d8e55 | spacing (padding-left): 36 | spacing:32 | 1.00 |
+| margin-top is -1px, should be 0px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | span/text | 888175ee | spacing (margin-top): -1 | spacing:0 | 1.00 |
+| margin-right is -1px, should be 0px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | span/text | 888175ee | spacing (margin-right): -1 | spacing:0 | 1.00 |
+| margin-bottom is -1px, should be 0px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | span/text | 888175ee | spacing (margin-bottom): -1 | spacing:0 | 1.00 |
+| margin-left is -1px, should be 0px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | span/text | 888175ee | spacing (margin-left): -1 | spacing:0 | 1.00 |
 | font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 1ba78d67 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | p/text | b7a25426 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 846c252f | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | 5dc62e01 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | footer | b0c27205 | font-size: 16 | font-size:14 | 1.00 |
 | padding-right is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 1ba78d67 | spacing (padding-right): 36 | spacing:32 | 1.00 |
 | padding-left is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | a/text | 1ba78d67 | spacing (padding-left): 36 | spacing:32 | 1.00 |
-| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | header | 1c1269c5 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 289064c6 | font-size: 16 | font-size:14 | 1.00 |
+| padding-right is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 289064c6 | spacing (padding-right): 36 | spacing:32 | 1.00 |
+| padding-left is 36px, should be 32px | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | 289064c6 | spacing (padding-left): 36 | spacing:32 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | a/text | 107cf6bf | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | span/text | 95184ef3 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | f3bf3349 | font-size: 16 | font-size:14 | 1.00 |
+| font size is 16px, should be 14px | https://shopify.dev/docs/api/polaris | div | adb20d09 | font-size: 16 | font-size:14 | 1.00 |
+| using "JetBrains Mono" instead of "Inter" | https://shopify.dev/docs/api/polaris/using-polaris-web-components | button/text | db9ad474 | font-family: "JetBrains Mono", Monaco, Consolas, "Lucida Console", monospace | font-family:Inter | 1.00 |
 
 ## Accessibility — WCAG contrast
 

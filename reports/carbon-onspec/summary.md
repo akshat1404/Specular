@@ -33,38 +33,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| padding-left is 344px, should be 160px | https://carbondesignsystem.com/ | div | 69ab8754 | spacing (padding-left): 344 | spacing:160 | 1.00 |
+| padding-right is 77.7344px, should be 80px | https://carbondesignsystem.com/ | a | dd7a13c1 | spacing (padding-right): 77.7344 | spacing:80 | 1.00 |
+| padding-right is 77.6562px, should be 80px | https://carbondesignsystem.com/components/button/usage/ | a | 352c4e64 | spacing (padding-right): 77.6562 | spacing:80 | 1.00 |
+| padding-right is 77.6562px, should be 80px | https://carbondesignsystem.com/components/text-input/usage/ | a | 352c4e64 | spacing (padding-right): 77.6562 | spacing:80 | 1.00 |
+| padding-top is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
+| padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
+| padding-top is 6px, should be 4px | https://carbondesignsystem.com/components/button/usage/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
+| padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/components/button/usage/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
+| padding-top is 6px, should be 4px | https://carbondesignsystem.com/components/text-input/usage/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
+| padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/components/text-input/usage/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
+| font size is 59.2501px, should be 54px | https://carbondesignsystem.com/components/button/usage/ | h1/text | d5ba5dc2 | font-size: 59.2501 | font-size:54 | 1.00 |
+| font size is 59.2501px, should be 54px | https://carbondesignsystem.com/components/text-input/usage/ | h1/text | d5ba5dc2 | font-size: 59.2501 | font-size:54 | 1.00 |
+| margin-right is -16px, should be 2px | https://carbondesignsystem.com/components/text-input/usage/ | section | 319b8e34 | spacing (margin-right): -16 | spacing:2 | 1.00 |
+| margin-left is -16px, should be 2px | https://carbondesignsystem.com/components/text-input/usage/ | section | 319b8e34 | spacing (margin-left): -16 | spacing:2 | 1.00 |
 | padding-right is 73.4844px, should be 80px | https://carbondesignsystem.com/ | div | 8be93874 | spacing (padding-right): 73.4844 | spacing:80 | 1.00 |
+| padding-left is 344px, should be 160px | https://carbondesignsystem.com/ | div | 69ab8754 | spacing (padding-left): 344 | spacing:160 | 1.00 |
 | padding-left is 344px, should be 160px | https://carbondesignsystem.com/ | div | 3e5dbe8d | spacing (padding-left): 344 | spacing:160 | 1.00 |
+| padding-right is 69.9844px, should be 64px | https://carbondesignsystem.com/ | a | bc4bbf7b | spacing (padding-right): 69.9844 | spacing:64 | 1.00 |
 | margin-top is -1px, should be 2px | https://carbondesignsystem.com/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
+| margin-top is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
+| margin-top is -1px, should be 2px | https://carbondesignsystem.com/components/text-input/usage/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
+| margin-top is -1px, should be 2px | https://carbondesignsystem.com/elements/color/overview/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
+| top-left corner radius is 16px, should be 0px | https://carbondesignsystem.com/components/text-input/usage/ | div | c80a92c3 | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
+| top-left corner radius is 16px, should be 0px | https://carbondesignsystem.com/components/text-input/usage/ | div | 925c6bc4 | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
 | margin-right is -1px, should be 2px | https://carbondesignsystem.com/ | a/text | 91f06406 | spacing (margin-right): -1 | spacing:2 | 1.00 |
 | margin-bottom is -1px, should be 2px | https://carbondesignsystem.com/ | a/text | 91f06406 | spacing (margin-bottom): -1 | spacing:2 | 1.00 |
 | margin-left is -1px, should be 2px | https://carbondesignsystem.com/ | a/text | 91f06406 | spacing (margin-left): -1 | spacing:2 | 1.00 |
-| padding-top is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
-| padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
-| padding-right is 69.9844px, should be 64px | https://carbondesignsystem.com/ | a | bc4bbf7b | spacing (padding-right): 69.9844 | spacing:64 | 1.00 |
-| padding-right is 77.7344px, should be 80px | https://carbondesignsystem.com/ | a | dd7a13c1 | spacing (padding-right): 77.7344 | spacing:80 | 1.00 |
 | margin-top is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-top): -1 | spacing:2 | 1.00 |
 | margin-right is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-right): -1 | spacing:2 | 1.00 |
 | margin-bottom is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-bottom): -1 | spacing:2 | 1.00 |
 | margin-left is -1px, should be 2px | https://carbondesignsystem.com/ | label/text | 65a09ee6 | spacing (margin-left): -1 | spacing:2 | 1.00 |
-| margin-top is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
-| margin-right is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | a/text | 91f06406 | spacing (margin-right): -1 | spacing:2 | 1.00 |
-| margin-bottom is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | a/text | 91f06406 | spacing (margin-bottom): -1 | spacing:2 | 1.00 |
-| margin-left is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | a/text | 91f06406 | spacing (margin-left): -1 | spacing:2 | 1.00 |
-| padding-top is 6px, should be 4px | https://carbondesignsystem.com/components/button/usage/ | a/text | 872b6daf | spacing (padding-top): 6 | spacing:4 | 1.00 |
-| padding-bottom is 6px, should be 4px | https://carbondesignsystem.com/components/button/usage/ | a/text | 872b6daf | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
-| padding-right is 77.6562px, should be 80px | https://carbondesignsystem.com/components/button/usage/ | a | 352c4e64 | spacing (padding-right): 77.6562 | spacing:80 | 1.00 |
-| top-left corner radius is 16px, should be 0px | https://carbondesignsystem.com/components/button/usage/ | div | c80a92c3 | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
-| top-left corner radius is 16px, should be 0px | https://carbondesignsystem.com/components/button/usage/ | div | dcbe9f01 | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
-| margin-top is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | label/text | 65a09ee6 | spacing (margin-top): -1 | spacing:2 | 1.00 |
-| margin-right is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | label/text | 65a09ee6 | spacing (margin-right): -1 | spacing:2 | 1.00 |
-| margin-bottom is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | label/text | 65a09ee6 | spacing (margin-bottom): -1 | spacing:2 | 1.00 |
-| margin-left is -1px, should be 2px | https://carbondesignsystem.com/components/button/usage/ | label/text | 65a09ee6 | spacing (margin-left): -1 | spacing:2 | 1.00 |
-| font size is 59.2501px, should be 54px | https://carbondesignsystem.com/components/button/usage/ | h1/text | d5ba5dc2 | font-size: 59.2501 | font-size:54 | 1.00 |
-| margin-top is -1px, should be 2px | https://carbondesignsystem.com/components/text-input/usage/ | a/text | 91f06406 | spacing (margin-top): -1 | spacing:2 | 1.00 |
 
 ## Accessibility — WCAG contrast
 

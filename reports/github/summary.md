@@ -32,38 +32,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | a/text | 22ef4a19 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | a/text | 9899b185 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans Mono" instead of "ui-monospace" | https://github.com/ | a/text | 8c0b16da | font-family: "Mona Sans Mono", monospace | font-family:ui-monospace | 1.00 |
-| font size is 24px, should be 20px | https://github.com/ | h2/text | 47d218b7 | font-size: 24 | font-size:20 | 1.00 |
-| font size is 24px, should be 20px | https://github.com/ | h2/text | 366fb416 | font-size: 24 | font-size:20 | 1.00 |
-| using "Mona Sans Mono" instead of "ui-monospace" | https://github.com/ | h2/text | 2f453c98 | font-family: "Mona Sans Mono", monospace | font-family:ui-monospace | 1.00 |
+| font size is 18px, should be 16px | https://github.com/ | span/text | 512d0512 | font-size: 18 | font-size:16 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 512d0512 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 22px, should be 20px | https://github.com/ | span/text | c438683e | font-size: 22 | font-size:20 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | c438683e | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
 | using "Mona Sans" instead of "ui-monospace" | https://github.com/ | h2/text | 92c55e51 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| font size is 48px, should be 40px | https://github.com/ | h2/text | 6df1a1f0 | font-size: 48 | font-size:40 | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | h2/text | 6df1a1f0 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| font size is 24px, should be 20px | https://github.com/ | h2/text | 21efecb5 | font-size: 24 | font-size:20 | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | h2/text | 21efecb5 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 18px, should be 16px | https://github.com/ | span/text | 957e173a | font-size: 18 | font-size:16 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 957e173a | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 22px, should be 20px | https://github.com/ | span/text | c67ab197 | font-size: 22 | font-size:20 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | c67ab197 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 22px, should be 20px | https://github.com/ | span/text | f176b065 | font-size: 22 | font-size:20 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | f176b065 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 48px, should be 40px | https://github.com/ | span/text | ecd2e54d | font-size: 48 | font-size:40 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | ecd2e54d | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font weight is 800, should be 600 (lighter than what's used) | https://github.com/ | span/text | ecd2e54d | font-weight: 800 | font-weight:600 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 2495d3da | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| top-left corner radius is 60px, should be 12px | https://github.com/ | button | 7882110f | border-radius (border-top-left-radius): 60 | border-radius:12 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | e3f1664d | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
 | using "Mona Sans" instead of "ui-monospace" | https://github.com/ | button/text | 84284725 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans Mono" instead of "ui-monospace" | https://github.com/ | button/text | de21bee7 | font-family: "Mona Sans Mono", monospace | font-family:ui-monospace | 1.00 |
+| padding-top is 6px, should be 4px | https://github.com/ | a | 78ff1dc8 | spacing (padding-top): 6 | spacing:4 | 1.00 |
+| padding-right is 20px, should be 16px | https://github.com/ | a | 78ff1dc8 | spacing (padding-right): 20 | spacing:16 | 1.00 |
+| padding-bottom is 6px, should be 4px | https://github.com/ | a | 78ff1dc8 | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
+| padding-left is 20px, should be 16px | https://github.com/ | a | 78ff1dc8 | spacing (padding-left): 20 | spacing:16 | 1.00 |
 | using "Mona Sans" instead of "ui-monospace" | https://github.com/ | button | 7e815292 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
 | padding-top is 6px, should be 4px | https://github.com/ | button | 7e815292 | spacing (padding-top): 6 | spacing:4 | 1.00 |
 | padding-right is 20px, should be 16px | https://github.com/ | button | 7e815292 | spacing (padding-right): 20 | spacing:16 | 1.00 |
 | padding-bottom is 6px, should be 4px | https://github.com/ | button | 7e815292 | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
 | padding-left is 20px, should be 16px | https://github.com/ | button | 7e815292 | spacing (padding-left): 20 | spacing:16 | 1.00 |
-| top-left corner radius is 60px, should be 12px | https://github.com/ | button | 7882110f | border-radius (border-top-left-radius): 60 | border-radius:12 | 1.00 |
-| top-left corner radius is 60px, should be 12px | https://github.com/ | button | 176b915e | border-radius (border-top-left-radius): 60 | border-radius:12 | 1.00 |
-| top-left corner radius is 48px, should be 12px | https://github.com/ | button | b1797ee2 | border-radius (border-top-left-radius): 48 | border-radius:12 | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | button | 64ff766d | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| padding-top is 6px, should be 4px | https://github.com/ | a | 78ff1dc8 | spacing (padding-top): 6 | spacing:4 | 1.00 |
-| padding-right is 20px, should be 16px | https://github.com/ | a | 78ff1dc8 | spacing (padding-right): 20 | spacing:16 | 1.00 |
-| padding-bottom is 6px, should be 4px | https://github.com/ | a | 78ff1dc8 | spacing (padding-bottom): 6 | spacing:4 | 1.00 |
-| padding-left is 20px, should be 16px | https://github.com/ | a | 78ff1dc8 | spacing (padding-left): 20 | spacing:16 | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | a | 36fa413f | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 7e71f0d5 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | a3bd5860 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
-| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 8b1b1333 | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 18px, should be 16px | https://github.com/ | span/text | 0dece52d | font-size: 18 | font-size:16 | 1.00 |
+| using "Mona Sans" instead of "ui-monospace" | https://github.com/ | span/text | 0dece52d | font-family: "Mona Sans", MonaSansFallback, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" | font-family:ui-monospace | 1.00 |
+| font size is 22px, should be 20px | https://github.com/ | span/text | 53a0795a | font-size: 22 | font-size:20 | 1.00 |
 
 ## Accessibility — WCAG contrast
 
@@ -74,21 +76,21 @@ Checked: 251, passing: 234, failing: 17
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/ | span/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/ | div/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/ | div/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/about | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/issues | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/pulls | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/torvalds | span/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds | span/text | 1.2:1 | fail | — |
+| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/ | div/text | 1.0:1 | fail | — |
+| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://github.com/ | div/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.4:1, needs at least 4.5:1 for AA | https://github.com/ | label/text | 1.4:1 | fail | — |
+| text here is barely readable against its background — 1.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds | span/text | 1.2:1 | fail | — |
 | text here is barely readable against its background — 1.7:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/pulls | span/text | 1.7:1 | fail | — |
 | text here is barely readable against its background — 1.9:1, needs at least 4.5:1 for AA | https://github.com/torvalds | span/text | 1.9:1 | fail | — |
 | text here is barely readable against its background — 2.7:1, needs at least 4.5:1 for AA | https://github.com/torvalds | span/text | 2.7:1 | fail | — |
+| text here is barely readable against its background — 4.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/issues | div/text | 4.2:1 | fail | — |
 | text here is barely readable against its background — 4.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux | span/text | 4.2:1 | fail | — |
 | text here is barely readable against its background — 4.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/issues | span/text | 4.2:1 | fail | — |
-| text here is barely readable against its background — 4.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/issues | div/text | 4.2:1 | fail | — |
 | text here is barely readable against its background — 4.2:1, needs at least 4.5:1 for AA | https://github.com/torvalds/linux/pulls | span/text | 4.2:1 | fail | — |
 | text here passes AA at 4.5:1 but falls short of AAA (needs 7:1) | https://github.com/torvalds/linux | span/text | 4.5:1 | AA | — |
 | text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://github.com/torvalds/linux/issues | span/text | 4.6:1 | AA | — |

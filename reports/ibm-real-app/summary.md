@@ -31,38 +31,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| font size is 47.2501px, should be 42px | https://www.ibm.com/ | li/text | 926f4329 | font-size: 47.2501 | font-size:42 | 1.00 |
-| padding-right is 10px, should be 8px | https://www.ibm.com/ | p/text | db22a682 | spacing (padding-right): 10 | spacing:8 | 1.00 |
-| top-left corner radius is 16px, should be 0px | https://www.ibm.com/ | span/text | c929d5d6 | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
-| top-left corner radius is 16px, should be 0px | https://www.ibm.com/ | span/text | db48179b | border-radius (border-top-left-radius): 16 | border-radius:0 | 1.00 |
-| using "Helvetica" instead of "IBM Plex Sans Var" | https://www.ibm.com/ | span/text | 936cba4c | font-family: Helvetica, Arial, sans-serif | font-family:IBM Plex Sans Var | 1.00 |
-| using "Helvetica" instead of "IBM Plex Sans Var" | https://www.ibm.com/ | button/text | 1128d043 | font-family: Helvetica, Arial, sans-serif | font-family:IBM Plex Sans Var | 1.00 |
-| padding-top is 14px, should be 12px | https://www.ibm.com/ | button/text | 1128d043 | spacing (padding-top): 14 | spacing:12 | 1.00 |
-| padding-bottom is 14px, should be 12px | https://www.ibm.com/ | button/text | 1128d043 | spacing (padding-bottom): 14 | spacing:12 | 1.00 |
-| margin-top is 60.4764px, should be 64px | https://www.ibm.com/ | div | 93d0f297 | spacing (margin-top): 60.4764 | spacing:64 | 1.00 |
 | padding-top is 360px, should be 160px | https://www.ibm.com/ | div | 0bcfc23d | spacing (padding-top): 360 | spacing:160 | 1.00 |
 | padding-right is 192px, should be 160px | https://www.ibm.com/ | div | 0bcfc23d | spacing (padding-right): 192 | spacing:160 | 1.00 |
 | padding-bottom is 360px, should be 160px | https://www.ibm.com/ | div | 0bcfc23d | spacing (padding-bottom): 360 | spacing:160 | 1.00 |
 | padding-left is 192px, should be 160px | https://www.ibm.com/ | div | 0bcfc23d | spacing (padding-left): 192 | spacing:160 | 1.00 |
-| font size is 47.2501px, should be 42px | https://www.ibm.com/ | h2/text | 3ca59393 | font-size: 47.2501 | font-size:42 | 1.00 |
-| using "Helvetica" instead of "IBM Plex Sans Var" | https://www.ibm.com/ | a/text | f8a86ffd | font-family: Helvetica, Arial, sans-serif | font-family:IBM Plex Sans Var | 1.00 |
-| font size is 47.2501px, should be 42px | https://www.ibm.com/ | c4d-content-block-heading/text | ccec071a | font-size: 47.2501 | font-size:42 | 1.00 |
-| using "Helvetica" instead of "IBM Plex Sans Var" | https://www.ibm.com/ | input | 5071459e | font-family: Helvetica, Arial, sans-serif | font-family:IBM Plex Sans Var | 1.00 |
-| using "Helvetica" instead of "IBM Plex Sans Var" | https://www.ibm.com/ | em/text | f252488a | font-family: Helvetica, Arial, sans-serif | font-family:IBM Plex Sans Var | 1.00 |
-| font size is 59.2501px, should be 54px | https://www.ibm.com/products | h1/text | fff61258 | font-size: 59.2501 | font-size:54 | 1.00 |
-| margin-right is -16px, should be 2px | https://www.ibm.com/products | div | 3c4a9060 | spacing (margin-right): -16 | spacing:2 | 1.00 |
-| margin-left is -16px, should be 2px | https://www.ibm.com/products | div | 3c4a9060 | spacing (margin-left): -16 | spacing:2 | 1.00 |
-| top-left corner radius is 15px, should be 0px | https://www.ibm.com/products | div | bc115f37 | border-radius (border-top-left-radius): 15 | border-radius:0 | 1.00 |
-| top-left corner radius is 15px, should be 0px | https://www.ibm.com/products | div | ac9217cb | border-radius (border-top-left-radius): 15 | border-radius:0 | 1.00 |
-| margin-left is -16px, should be 2px | https://www.ibm.com/products | div | 474fbbc4 | spacing (margin-left): -16 | spacing:2 | 1.00 |
 | padding-top is 360px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-top): 360 | spacing:160 | 1.00 |
 | padding-right is 192px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-right): 192 | spacing:160 | 1.00 |
 | padding-bottom is 360px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-bottom): 360 | spacing:160 | 1.00 |
 | padding-left is 192px, should be 160px | https://www.ibm.com/products | div | 0bcfc23d | spacing (padding-left): 192 | spacing:160 | 1.00 |
+| padding-top is 360px, should be 160px | https://www.ibm.com/consulting | div | 0bcfc23d | spacing (padding-top): 360 | spacing:160 | 1.00 |
+| padding-right is 192px, should be 160px | https://www.ibm.com/consulting | div | 0bcfc23d | spacing (padding-right): 192 | spacing:160 | 1.00 |
+| padding-bottom is 360px, should be 160px | https://www.ibm.com/consulting | div | 0bcfc23d | spacing (padding-bottom): 360 | spacing:160 | 1.00 |
+| padding-left is 192px, should be 160px | https://www.ibm.com/consulting | div | 0bcfc23d | spacing (padding-left): 192 | spacing:160 | 1.00 |
+| padding-top is 360px, should be 160px | https://www.ibm.com/cloud | div | 0bcfc23d | spacing (padding-top): 360 | spacing:160 | 1.00 |
+| padding-right is 192px, should be 160px | https://www.ibm.com/cloud | div | 0bcfc23d | spacing (padding-right): 192 | spacing:160 | 1.00 |
+| padding-bottom is 360px, should be 160px | https://www.ibm.com/cloud | div | 0bcfc23d | spacing (padding-bottom): 360 | spacing:160 | 1.00 |
+| padding-left is 192px, should be 160px | https://www.ibm.com/cloud | div | 0bcfc23d | spacing (padding-left): 192 | spacing:160 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/ | h2/text | 3ca59393 | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/consulting | h2/text | 5fdde71b | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/consulting | h2/text | 3ca59393 | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/cloud | span/text | 39575ca7 | font-size: 47.2501 | font-size:42 | 1.00 |
 | font size is 47.2501px, should be 42px | https://www.ibm.com/products | h2/text | 3ca59393 | font-size: 47.2501 | font-size:42 | 1.00 |
-| font size is 47.2501px, should be 42px | https://www.ibm.com/consulting | span/text | 0c9fbea3 | font-size: 47.2501 | font-size:42 | 1.00 |
+| margin-top is 60.4764px, should be 64px | https://www.ibm.com/ | div | 93d0f297 | spacing (margin-top): 60.4764 | spacing:64 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/ | c4d-content-block-heading/text | ccec071a | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/cloud | p/text | 8ed71d81 | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/ | li/text | 926f4329 | font-size: 47.2501 | font-size:42 | 1.00 |
+| font size is 59.2501px, should be 54px | https://www.ibm.com/products | h1/text | fff61258 | font-size: 59.2501 | font-size:54 | 1.00 |
+| margin-right is -16px, should be 2px | https://www.ibm.com/products | div | 3c4a9060 | spacing (margin-right): -16 | spacing:2 | 1.00 |
+| margin-left is -16px, should be 2px | https://www.ibm.com/products | div | 3c4a9060 | spacing (margin-left): -16 | spacing:2 | 1.00 |
+| font size is 47.2501px, should be 42px | https://www.ibm.com/cloud | p/text | c83bf8d1 | font-size: 47.2501 | font-size:42 | 1.00 |
+| margin-right is -16px, should be 2px | https://www.ibm.com/cloud | nav | c2bedafa | spacing (margin-right): -16 | spacing:2 | 1.00 |
 
 ## Accessibility — WCAG contrast
 
@@ -72,11 +74,11 @@ Checked: 189, passing: 180, failing: 9
 
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|
+| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/ | span/text | 1.0:1 | fail | — |
+| text here is barely readable against its background — 1.1:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.1:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/cloud | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.1:1, needs at least 4.5:1 for AA | https://www.ibm.com/think | span/text | 1.1:1 | fail | — |
 | text here is barely readable against its background — 1.7:1, needs at least 4.5:1 for AA | https://www.ibm.com/products | span/text | 1.7:1 | fail | — |
 | text here is barely readable against its background — 1.7:1, needs at least 4.5:1 for AA | https://www.ibm.com/cloud | span/text | 1.7:1 | fail | — |
 | text here is barely readable against its background — 1.9:1, needs at least 4.5:1 for AA | https://www.ibm.com/ | button/text | 1.9:1 | fail | — |

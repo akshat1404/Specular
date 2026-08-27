@@ -31,38 +31,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | nav | ce8a3ef4 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestUI" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 10c2961b | font-family: PinterestUI, sans-serif | font-family:-apple-system | 1.00 |
-| font size is 78px, should be 36px | https://business.pinterest.com/en-in/ | b/text | 783bf458 | font-size: 78 | font-size:36 | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 783bf458 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | p/text | 8d6d1791 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | d4dd8321 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | df5d4201 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
 | font size is 48px, should be 36px | https://business.pinterest.com/en-in/ | b/text | ebb4e68a | font-size: 48 | font-size:36 | 1.00 |
 | using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | ebb4e68a | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| font size is 32px, should be 28px | https://business.pinterest.com/en-in/ | b/text | 3fd73768 | font-size: 32 | font-size:28 | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 3fd73768 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| font size is 48px, should be 36px | https://business.pinterest.com/en-in/ | b/text | eae4d3d8 | font-size: 48 | font-size:36 | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | eae4d3d8 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
 | font size is 48px, should be 36px | https://business.pinterest.com/en-in/ | b/text | 6d06d49d | font-size: 48 | font-size:36 | 1.00 |
 | using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 6d06d49d | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 85907b44 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 422505cc | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 260db8fa | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 787b6c51 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 9a9d6160 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 6ccc0ddd | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 69333062 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| font weight is 500, should be 400 (lighter than what's used) | https://business.pinterest.com/en-in/ | span/text | 69333062 | font-weight: 500 | font-weight:400 | 1.00 |
-| font size is 18px, should be 16px | https://business.pinterest.com/en-in/ | span/text | 07ee70e7 | font-size: 18 | font-size:16 | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 07ee70e7 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | nav | ce8a3ef4 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| font size is 78px, should be 36px | https://business.pinterest.com/en-in/ | b/text | 783bf458 | font-size: 78 | font-size:36 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 783bf458 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 8e0cc251 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 910480c9 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | cfb1e40c | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 44e114f1 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| padding-top is 104px, should be 64px | https://business.pinterest.com/en-in/ | div | 44e114f1 | spacing (padding-top): 104 | spacing:64 | 1.00 |
+| margin-top is -108px, should be -64px | https://business.pinterest.com/en-in/ | div | 44e114f1 | spacing (margin-top): -108 | spacing:-64 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 308e757f | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 53bfc5e8 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| font size is 26px, should be 28px | https://business.pinterest.com/en-in/ | p/text | c9392f56 | font-size: 26 | font-size:28 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | p/text | c9392f56 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| font size is 18px, should be 16px | https://business.pinterest.com/en-in/ | p/text | c5b65081 | font-size: 18 | font-size:16 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | p/text | c5b65081 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| font size is 48px, should be 36px | https://business.pinterest.com/en-in/ | b/text | eae4d3d8 | font-size: 48 | font-size:36 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | eae4d3d8 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
 | using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 624135f4 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | 39542997 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | span/text | bb98ebe0 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | a | fbe894f7 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | a | 914ba7c4 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | a | 598ba35e | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | a | 219dcf8d | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
-| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | a | eac83e93 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | p/text | 9d210ea3 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | div | 426a9bf3 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| font size is 32px, should be 28px | https://business.pinterest.com/en-in/ | b/text | 3fd73768 | font-size: 32 | font-size:28 | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | b/text | 3fd73768 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
+| using "PinterestSansPro" instead of "-apple-system" | https://business.pinterest.com/en-in/ | p/text | f5e4f5f0 | font-family: PinterestSansPro, sans-serif | font-family:-apple-system | 1.00 |
 
 ## Accessibility — WCAG contrast
 
@@ -72,10 +74,10 @@ Checked: 145, passing: 141, failing: 4
 
 | finding | page | component | ratio | level | spec-token fix |
 |---|---|---|---|---|---|
-| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://business.pinterest.com/en-in/ | button/text | 1.0:1 | fail | — |
-| text here is barely readable against its background — 1.0:1, needs at least 3:1 for AA | https://business.pinterest.com/en-in/how-pinterest-works/ | span/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://business.pinterest.com/en-in/how-pinterest-works/ | span/text | 1.0:1 | fail | — |
+| text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://business.pinterest.com/en-in/ | button/text | 1.0:1 | fail | — |
 | text here is barely readable against its background — 1.0:1, needs at least 4.5:1 for AA | https://business.pinterest.com/en-in/advertise/ | button/text | 1.0:1 | fail | — |
+| text here is barely readable against its background — 1.0:1, needs at least 3:1 for AA | https://business.pinterest.com/en-in/how-pinterest-works/ | span/text | 1.0:1 | fail | — |
 | text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://business.pinterest.com/en-in/ | p/text | 4.6:1 | AA | — |
 | text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://business.pinterest.com/en-in/ | a/text | 4.6:1 | AA | — |
 | text here passes AA at 4.6:1 but falls short of AAA (needs 7:1) | https://business.pinterest.com/en-in/ | span/text | 4.6:1 | AA | — |

@@ -33,38 +33,40 @@ Per page: an overlay of the captured screenshot with flagged deviations boxed an
 
 ## Worst offenders
 
+_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._
+
 | what's wrong | page | component | instance | raw value | nearest token | normalized |
 |---|---|---|---|---|---|---|
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | d7d791b7 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | eeed7616 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 97f32cab | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 884de69a | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | fc1a7867 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 32b99456 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 36f58faf | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | ca190e70 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 194eeafc | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | a | 9471ef5b | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | nav | 5b434460 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | hr | 84927efa | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | d7d791b7 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | eeed7616 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 97f32cab | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 884de69a | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | fc1a7867 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 32b99456 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 6d628e41 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 420fe205 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | fab65161 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | d7d791b7 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | d7d791b7 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | eeed7616 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | div | 884de69a | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | eeed7616 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 884de69a | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 103d88c6 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | b59fc717 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/overview | nav | 5b434460 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 7f8d0684 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 5478ebed | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 24fa464a | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 9cf80e13 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 5478ebed | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 75e6c610 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | d6363a38 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | b59fc717 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
-| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 90c17386 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 | using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 79aa59ca | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | b380ad89 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 90c17386 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 36f54613 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | d6a43779 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | f3daebd3 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 7e6ad0e1 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | e1352bb5 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | c4614abd | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | a6f47c96 | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
+| using "Times New Roman" instead of "-apple-system" | https://gestalt.pinterest.systems/v1/foundations/color/palette | div | 7588032d | font-family: "Times New Roman" | font-family:-apple-system | 1.00 |
 
 ## Accessibility — WCAG contrast
 
