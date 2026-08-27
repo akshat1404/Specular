@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { selectTopFindings } from "../src/summary/rank.js";
+import { rankedAccessibilityOffenders, rankedDeviationOffenders, selectTopFindings } from "../src/summary/rank.js";
 import type { ProductReport, Offender } from "../src/aggregator/aggregate.js";
 import type { AccessibilityFinding } from "../src/accessibility/types.js";
 import type { ExtractedElement, ExtractedPage, Position } from "../src/extractor/types.js";
@@ -153,5 +153,79 @@ describe("selectTopFindings", () => {
     const els = extractedByUrl("https://example.com/", [element("inst1", [position])]);
     const result = selectTopFindings(report([offender()]), els);
     expect(result[0].position).toEqual(position);
+  });
+});
+
+describe("rankedDeviationOffenders", () => {
+  it("reorders so a widely-repeated, lower-severity offender ranks above a one-off, higher-severity one", () => {
+    // Same setup as selectTopFindings's "boosts a deviation repeated across
+    // many occurrences" case, but with the repeated one given a *lower* raw
+    // normalized than the one-off — on raw severity alone it would rank
+    // second; the boost should still put it first.
+    // repeated: normalized 0.35, 15 occurrences -> boosted 0.35 * 1.75 = 0.6125
+    // oneOff: normalized 0.5 (higher raw severity), single occurrence -> boosted 0.5 * 1.05 = 0.525
+    const repeated = offender({ instanceId: "repeated", normalized: 0.35, component: "Repeated" });
+    const oneOff = offender({ instanceId: "oneOff", normalized: 0.5, component: "OneOff" });
+    const els = extractedByUrl("https://example.com/", [
+      element("repeated", Array(15).fill({ x: 0, y: 0, width: 10, height: 10 })),
+      element("oneOff", [{ x: 0, y: 0, width: 10, height: 10 }]),
+    ]);
+
+    // Raw normalized alone would put oneOff first — confirm that's genuinely
+    // the starting order, so the reorder below is the boost doing something.
+    expect(oneOff.normalized).toBeGreaterThan(repeated.normalized);
+
+    const result = rankedDeviationOffenders([oneOff, repeated], els);
+    expect(result.map((o) => o.instanceId)).toEqual(["repeated", "oneOff"]);
+  });
+
+  it("does not mutate the input array or drop any fields off each entry", () => {
+    const original = [offender({ instanceId: "a", normalized: 0.2 }), offender({ instanceId: "b", normalized: 0.8 })];
+    const inputCopy = [...original];
+    const result = rankedDeviationOffenders(original, NO_ELEMENTS);
+
+    expect(original).toEqual(inputCopy); // input order/contents untouched
+    expect(result).toHaveLength(2);
+    expect(result.find((o) => o.instanceId === "a")).toEqual(original[0]); // every field preserved, including raw `normalized`
+  });
+
+  it("falls back to raw-normalized ordering when there's no prominence data for either offender", () => {
+    const worst = offender({ instanceId: "worst", normalized: 0.9 });
+    const mild = offender({ instanceId: "mild", normalized: 0.2 });
+    const result = rankedDeviationOffenders([mild, worst], NO_ELEMENTS);
+    expect(result.map((o) => o.instanceId)).toEqual(["worst", "mild"]);
+  });
+});
+
+describe("rankedAccessibilityOffenders", () => {
+  it("reorders so a widely-repeated, lower-severity finding ranks above a one-off, higher-severity one", () => {
+    // repeated: ratio 2.925 vs AA 4.5 -> severity (4.5-2.925)/4.5 = 0.35, 15 occurrences -> boosted 0.35 * 1.75 = 0.6125
+    const repeated = a11yFinding({ instanceId: "repeated", ratio: 2.925 });
+    // oneOff: ratio 2.25 -> severity (4.5-2.25)/4.5 = 0.5 (higher raw severity), single occurrence -> boosted 0.5 * 1.05 = 0.525
+    const oneOff = a11yFinding({ instanceId: "oneOff", ratio: 2.25 });
+    const els = extractedByUrl("https://example.com/", [
+      element("repeated", Array(15).fill({ x: 0, y: 0, width: 10, height: 10 })),
+      element("oneOff", [{ x: 0, y: 0, width: 10, height: 10 }]),
+    ]);
+
+    const result = rankedAccessibilityOffenders([oneOff, repeated], els);
+    expect(result.map((f) => f.instanceId)).toEqual(["repeated", "oneOff"]);
+  });
+
+  it("does not mutate the input array", () => {
+    const original = [a11yFinding({ instanceId: "a", ratio: 4.0 }), a11yFinding({ instanceId: "b", ratio: 1.0 })];
+    const inputCopy = [...original];
+    rankedAccessibilityOffenders(original, NO_ELEMENTS);
+    expect(original).toEqual(inputCopy);
+  });
+
+  it("does not apply the cross-category accessibility priority multiplier (same-category table, nothing to weigh against)", () => {
+    // Two findings with genuinely different severity should order purely by
+    // that severity (boosted by prominence) - no extra multiplier folded in
+    // that would only make sense when comparing against deviations.
+    const worse = a11yFinding({ instanceId: "worse", ratio: 1.0 });
+    const better = a11yFinding({ instanceId: "better", ratio: 4.0 });
+    const result = rankedAccessibilityOffenders([better, worse], NO_ELEMENTS);
+    expect(result.map((f) => f.instanceId)).toEqual(["worse", "better"]);
   });
 });
