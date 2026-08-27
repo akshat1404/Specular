@@ -36,7 +36,9 @@ function renderThumbnail(finding: RankedFinding, screenshotDataUri: string | und
   const top = -(centerY - THUMB_HEIGHT / 2);
 
   return `<div class="thumb" style="border-color:${colorFor(finding)}">
-  <img src="${screenshotDataUri}" style="left:${left}px;top:${top}px;" alt="">
+  <div class="thumb-mask">
+    <img src="${screenshotDataUri}" style="left:${left}px;top:${top}px;" alt="">
+  </div>
 </div>`;
 }
 
@@ -76,6 +78,26 @@ const STYLE = `
   .finding-text { font-size: 15px; line-height: 1.5; margin: 0; color: #1a1a2e; }
   .finding-meta { font-size: 12px; color: #8a8fa3; margin: 6px 0 0; word-break: break-all; }
   .thumb { flex: none; width: ${THUMB_WIDTH}px; height: ${THUMB_HEIGHT}px; overflow: hidden; position: relative; border-radius: 6px; border: 2px solid; background: #f4f5f9; }
+  /*
+   * The crop is centered on the flagged element's own bounding box, which
+   * is very often wider/taller than this fixed-size window (a nav bar, a
+   * paragraph) — so the visible slice routinely cuts text off mid-word at
+   * an edge. That's an inherent cost of a small, legible-at-1:1-scale
+   * thumbnail, not something worth a smarter crop algorithm to fully avoid.
+   * A soft mask on all four edges is the cheap fix: it turns "the render
+   * looks broken/clipped" into "this is deliberately a small zoomed-in
+   * preview," without touching the centering math itself. The mask sits on
+   * its own inner wrapper, not .thumb itself, so the border stays crisp —
+   * mask-image would otherwise fade the border pixels out too, since the
+   * default mask-origin is the border box.
+   */
+  .thumb-mask {
+    width: 100%; height: 100%; position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 14%, black 86%, transparent), linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent, black 14%, black 86%, transparent), linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+    mask-composite: intersect;
+  }
   .thumb img { position: absolute; max-width: none; }
   .empty-note { font-size: 14px; color: #8a8fa3; padding: 8px 0; }
   .footer { margin-top: 32px; font-size: 11px; color: #b0b4c3; }
