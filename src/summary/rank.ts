@@ -60,15 +60,24 @@ function clamp01(n: number): number {
   return Math.min(1, Math.max(0, n));
 }
 
-function findElement(extractedByUrl: Map<string, ExtractedPage>, page: string, instanceId: string): ExtractedElement | undefined {
+/**
+ * Looks up the live sampled element (positions, occurrence count) an
+ * `Offender`/`AccessibilityFinding` refers to — both only carry a `page` +
+ * `instanceId`, not the full captured element, so every prominence-boosted
+ * ranking needs this same lookup. Exported alongside the boost primitives
+ * below so a caller with its own list of offenders/findings (e.g. a
+ * worst-offenders table sorting the *full* list, not just top-3) can reuse
+ * the exact same lookup rather than re-deriving it.
+ */
+export function findElement(extractedByUrl: Map<string, ExtractedPage>, page: string, instanceId: string): ExtractedElement | undefined {
   return extractedByUrl.get(page)?.elements.find((e) => e.instanceId === instanceId);
 }
 
-function occurrenceCountOf(el: ExtractedElement | undefined): number {
+export function occurrenceCountOf(el: ExtractedElement | undefined): number {
   return el?.count ?? el?.positions?.length ?? 1;
 }
 
-function avgAreaOf(el: ExtractedElement | undefined): number {
+export function avgAreaOf(el: ExtractedElement | undefined): number {
   if (!el?.positions || el.positions.length === 0) return 0;
   const total = el.positions.reduce((sum, p) => sum + p.width * p.height, 0);
   return total / el.positions.length;
@@ -96,7 +105,7 @@ function representativePosition(el: ExtractedElement | undefined): Position | un
  * pages is more of a systemic issue than the same normalized distance on
  * one page.
  */
-function pageSpreadOf(offender: Offender, allOffenders: Offender[]): number {
+export function pageSpreadOf(offender: Offender, allOffenders: Offender[]): number {
   const signature = `${offender.component}|${offender.property}|${offender.detail ?? ""}|${offender.nearestToken}`;
   const pages = new Set(
     allOffenders
@@ -115,11 +124,25 @@ function pageSpreadOf(offender: Offender, allOffenders: Offender[]): number {
  * signal. `pageSpread` defaults to 1 (neutral) for callers that don't
  * track it (accessibility findings, currently).
  */
-function prominenceBoost(occurrenceCount: number, avgArea: number, pageSpread: number): number {
+export function prominenceBoost(occurrenceCount: number, avgArea: number, pageSpread: number): number {
   const occurrenceBoost = 1 + Math.min(occurrenceCount, MAX_OCCURRENCE_FOR_BOOST) / MAX_OCCURRENCE_FOR_BOOST;
   const spreadBoost = 1 + Math.min(Math.max(pageSpread - 1, 0), MAX_PAGE_SPREAD_FOR_BOOST) / MAX_PAGE_SPREAD_FOR_BOOST;
   const areaBoost = avgArea > 0 ? 1 + Math.min(avgArea, AREA_BOOST_REFERENCE_PX2) / AREA_BOOST_REFERENCE_PX2 : 1;
   return occurrenceBoost * spreadBoost * areaBoost;
+}
+
+/**
+ * An accessibility finding's severity on the same 0-1 scale a deviation's
+ * `normalized` already is — how far below the applicable AA threshold the
+ * captured ratio falls, clamped so a ratio already at/above threshold (an
+ * AA/AAA pass slipping in some other way) never goes negative. Extracted
+ * out of `selectTopFindings` so a caller ranking the *full* accessibility
+ * worst-offenders list (not just top-3) can compute the same severity
+ * without re-deriving the threshold logic.
+ */
+export function accessibilitySeverity(finding: AccessibilityFinding): number {
+  const threshold = finding.isLargeText ? 3 : 4.5; // AA threshold — same split classifyContrast uses
+  return clamp01((threshold - finding.ratio) / threshold);
 }
 
 /**
@@ -160,8 +183,7 @@ export function selectTopFindings(report: ProductReport, extractedByUrl: Map<str
 
   for (const finding of accessibilityFindings) {
     const el = findElement(extractedByUrl, finding.page, finding.instanceId);
-    const threshold = finding.isLargeText ? 3 : 4.5; // AA threshold — same split classifyContrast uses
-    const severity = clamp01((threshold - finding.ratio) / threshold);
+    const severity = accessibilitySeverity(finding);
     const boost = prominenceBoost(occurrenceCountOf(el), avgAreaOf(el), 1);
     ranked.push({
       kind: "accessibility",
@@ -176,4 +198,47 @@ export function selectTopFindings(report: ProductReport, extractedByUrl: Map<str
   }
 
   return ranked.sort((a, b) => b.score - a.score).slice(0, limit);
+}
+
+/**
+ * Re-sorts a same-category deviation offenders list by the same
+ * occurrence/spread/area-boosted score `selectTopFindings` uses for its
+ * deviation half — a widely-repeated moderate deviation should outrank a
+ * one-off severe one, the same argument that already justified the boost
+ * for the cross-category top-3. Deliberately not routed through
+ * `selectTopFindings`/`RankedFinding`: this is one category sorting against
+ * itself, so there's nothing to weigh accessibility against and no reason
+ * to apply `ACCESSIBILITY_PRIORITY_MULTIPLIER`. Returns a new array (the
+ * input isn't mutated) with every field the caller already had — only the
+ * order changes, `normalized` stays on each entry so the raw severity is
+ * still visible in the table.
+ */
+export function rankedDeviationOffenders(offenders: Offender[], extractedByUrl: Map<string, ExtractedPage>): Offender[] {
+  return [...offenders].sort((a, b) => {
+    const elA = findElement(extractedByUrl, a.page, a.instanceId);
+    const elB = findElement(extractedByUrl, b.page, b.instanceId);
+    const scoreA = a.normalized * prominenceBoost(occurrenceCountOf(elA), avgAreaOf(elA), pageSpreadOf(a, offenders));
+    const scoreB = b.normalized * prominenceBoost(occurrenceCountOf(elB), avgAreaOf(elB), pageSpreadOf(b, offenders));
+    return scoreB - scoreA;
+  });
+}
+
+/**
+ * Same idea as `rankedDeviationOffenders`, for the accessibility
+ * worst-offenders list: boosted by the same `prominenceBoost` formula
+ * (`pageSpread` defaulted to 1, same as `selectTopFindings`'s accessibility
+ * half — a contrast failure isn't tracked as "the same failure repeated
+ * across N pages" the way a deviation signature is), without the
+ * cross-category priority multiplier. Doesn't filter by `level` — the
+ * caller (report.html/summary.md) already decides which findings it wants
+ * to list; this only changes their order.
+ */
+export function rankedAccessibilityOffenders(findings: AccessibilityFinding[], extractedByUrl: Map<string, ExtractedPage>): AccessibilityFinding[] {
+  return [...findings].sort((a, b) => {
+    const elA = findElement(extractedByUrl, a.page, a.instanceId);
+    const elB = findElement(extractedByUrl, b.page, b.instanceId);
+    const scoreA = accessibilitySeverity(a) * prominenceBoost(occurrenceCountOf(elA), avgAreaOf(elA), 1);
+    const scoreB = accessibilitySeverity(b) * prominenceBoost(occurrenceCountOf(elB), avgAreaOf(elB), 1);
+    return scoreB - scoreA;
+  });
 }

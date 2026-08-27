@@ -6,10 +6,17 @@ import type { ExtractedPage } from "../extractor/types.js";
 import type { TokenSpec } from "../schema/tokenSpec.js";
 import { buildOverlayBoxes, overlayFilename, pageSlug, renderOverlayHtml } from "./overlay.js";
 import { writeStandaloneReport } from "./standalone.js";
+import { rankedAccessibilityOffenders, rankedDeviationOffenders } from "../summary/rank.js";
 
 const REPORTS_ROOT = path.resolve(process.cwd(), "reports");
 
-function summaryMarkdown(target: CrawlTarget, report: ProductReport, overlayLinks: Map<string, string>, correctedLinks: Map<string, string>): string {
+function summaryMarkdown(
+  target: CrawlTarget,
+  report: ProductReport,
+  overlayLinks: Map<string, string>,
+  correctedLinks: Map<string, string>,
+  extractedByUrl: Map<string, ExtractedPage>
+): string {
   const lines: string[] = [];
   lines.push(`# ${target.label} (${target.kind})`);
   lines.push("");
@@ -67,9 +74,13 @@ function summaryMarkdown(target: CrawlTarget, report: ProductReport, overlayLink
   lines.push("");
   lines.push("## Worst offenders");
   lines.push("");
+  lines.push(
+    "_Ordered by occurrence/spread/area-boosted score, not raw normalized distance — a deviation repeated widely across the product outranks a one-off more severe one. `normalized` itself is still the raw, unboosted severity._"
+  );
+  lines.push("");
   lines.push("| what's wrong | page | component | instance | raw value | nearest token | normalized |");
   lines.push("|---|---|---|---|---|---|---|");
-  for (const o of report.worstOffenders.slice(0, 30)) {
+  for (const o of rankedDeviationOffenders(report.worstOffenders, extractedByUrl).slice(0, 30)) {
     const detail = o.detail ? ` (${o.detail})` : "";
     const value = String(o.rawValue).replace(/\|/g, "\\|");
     const humanReadable = o.humanReadable.replace(/\|/g, "\\|");
@@ -88,7 +99,7 @@ function summaryMarkdown(target: CrawlTarget, report: ProductReport, overlayLink
     lines.push("");
     lines.push("| finding | page | component | ratio | level | spec-token fix |");
     lines.push("|---|---|---|---|---|---|");
-    for (const f of report.accessibility.worstOffenders) {
+    for (const f of rankedAccessibilityOffenders(report.accessibility.worstOffenders, extractedByUrl)) {
       const finding = f.humanReadable.replace(/\|/g, "\\|");
       const fix = f.tieIn ? f.tieIn.humanReadable.replace(/\|/g, "\\|") : "—";
       lines.push(`| ${finding} | ${f.page} | ${f.component} | ${f.ratio.toFixed(1)}:1 | ${f.level} | ${fix} |`);
@@ -166,6 +177,6 @@ export function writeReport(target: CrawlTarget, report: ProductReport, spec: To
   const correctedLinks = writePageCorrectedScreenshots(dir, report.pages, extractedByUrl);
 
   writeFileSync(path.join(dir, "report.json"), JSON.stringify({ target, report }, null, 2), "utf-8");
-  writeFileSync(path.join(dir, "summary.md"), summaryMarkdown(target, report, overlayLinks, correctedLinks), "utf-8");
+  writeFileSync(path.join(dir, "summary.md"), summaryMarkdown(target, report, overlayLinks, correctedLinks, extractedByUrl), "utf-8");
   writeStandaloneReport(dir, target, report, extractedByUrl, spec);
 }

@@ -5,6 +5,7 @@ import type { PageReport, ProductReport } from "../aggregator/aggregate.js";
 import type { ExtractedPage } from "../extractor/types.js";
 import type { TokenSpec } from "../schema/tokenSpec.js";
 import { buildOverlayBoxes, escapeHtml, OVERLAY_CSS, renderOverlayLegend, renderOverlayStage } from "./overlay.js";
+import { rankedAccessibilityOffenders, rankedDeviationOffenders } from "../summary/rank.js";
 
 function toDataUri(relativePath: string): string {
   const abs = path.resolve(process.cwd(), relativePath);
@@ -64,8 +65,15 @@ ${rows}
 </tbody></table>`;
 }
 
-function renderOffendersTable(report: ProductReport): string {
-  const rows = report.worstOffenders
+/**
+ * Ordered by occurrence/spread/area-boosted score (see
+ * summary/rank.ts's rankedDeviationOffenders), not raw `normalized` — a
+ * deviation repeated widely across the product outranks a one-off more
+ * severe one. `normalized` itself stays on the row unchanged: the boost
+ * changes ordering, not what's shown.
+ */
+function renderOffendersTable(report: ProductReport, extractedByUrl: Map<string, ExtractedPage>): string {
+  const rows = rankedDeviationOffenders(report.worstOffenders, extractedByUrl)
     .slice(0, 30)
     .map((o) => {
       const detail = o.detail ? ` (${o.detail})` : "";
@@ -81,14 +89,18 @@ ${rows}
 /**
  * A separate section, not merged into the breakdown/offenders tables above:
  * WCAG contrast is an external, objective pass/fail against the standard's
- * own thresholds, independent of the brand token spec.
+ * own thresholds, independent of the brand token spec. Also reused, as-is,
+ * by the per-target hosted-site overview page (site/targetOverview.ts).
+ * Ordered by the same occurrence/area-boosted score as the deviation table
+ * above (see summary/rank.ts's rankedAccessibilityOffenders), without the
+ * cross-category accessibility multiplier the PDF's top-3 selection uses —
+ * there's nothing to weigh accessibility against in a same-category table.
  */
-/** Also reused, as-is, by the per-target hosted-site overview page (site/targetOverview.ts). */
-export function renderAccessibilitySection(report: ProductReport): string {
+export function renderAccessibilitySection(report: ProductReport, extractedByUrl: Map<string, ExtractedPage>): string {
   const a = report.accessibility;
   if (!a || a.totalChecked === 0) return "";
 
-  const rows = a.worstOffenders
+  const rows = rankedAccessibilityOffenders(a.worstOffenders, extractedByUrl)
     .map(
       (f) =>
         `<tr><td>${escapeHtml(f.humanReadable)}</td><td>${escapeHtml(f.page)}</td><td>${escapeHtml(f.component)}</td><td>${f.ratio.toFixed(1)}:1</td><td>${escapeHtml(f.level)}</td><td>${f.tieIn ? escapeHtml(f.tieIn.humanReadable) : "—"}</td></tr>`
@@ -153,8 +165,8 @@ ${OVERLAY_CSS}
 ${renderUnverifiedBanner(target)}
 <main>
 ${renderBreakdownTable(report)}
-${renderOffendersTable(report)}
-${renderAccessibilitySection(report)}
+${renderOffendersTable(report, extractedByUrl)}
+${renderAccessibilitySection(report, extractedByUrl)}
 ${pageSections}
 </main>
 </body>

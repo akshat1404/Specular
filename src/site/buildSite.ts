@@ -8,6 +8,7 @@ import { buildPageFindings, renderPageDetailHtml } from "./pageDetail.js";
 import { renderTargetOverviewHtml } from "./targetOverview.js";
 import type { CrawlTarget } from "../targets/types.js";
 import type { ProductReport } from "../aggregator/aggregate.js";
+import type { ExtractedPage } from "../extractor/types.js";
 import type { TokenAdapter } from "../adapters/types.js";
 
 const REPORTS_ROOT = path.resolve(process.cwd(), "reports");
@@ -51,8 +52,10 @@ export async function buildTargetSite(targetKey: string, adapter: TokenAdapter):
   mkdirSync(targetDir, { recursive: true });
 
   const generatedSlugs = new Map<string, string>();
+  const extractedByUrl = new Map<string, ExtractedPage>();
   for (const pageReport of report.pages) {
     const extracted = readCache(targetKey, pageReport.page);
+    if (extracted) extractedByUrl.set(pageReport.page, extracted);
     if (!extracted?.screenshotPath) continue;
 
     const screenshotAbsPath = path.resolve(process.cwd(), extracted.screenshotPath);
@@ -74,7 +77,7 @@ export async function buildTargetSite(targetKey: string, adapter: TokenAdapter):
     generatedSlugs.set(pageReport.page, slug);
   }
 
-  writeFileSync(path.join(targetDir, "index.html"), renderTargetOverviewHtml(target, report, generatedSlugs), "utf-8");
+  writeFileSync(path.join(targetDir, "index.html"), renderTargetOverviewHtml(target, report, generatedSlugs, extractedByUrl), "utf-8");
   return { pagesBuilt: generatedSlugs.size };
 }
 

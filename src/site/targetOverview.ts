@@ -1,5 +1,6 @@
 import type { CrawlTarget } from "../targets/types.js";
 import type { ProductReport } from "../aggregator/aggregate.js";
+import type { ExtractedPage } from "../extractor/types.js";
 import { escapeHtml } from "../report/overlay.js";
 import { renderAccessibilitySection, renderBreakdownTable, renderUnverifiedBanner } from "../report/standalone.js";
 
@@ -34,7 +35,7 @@ ${rows.join("\n")}
  * detail view. Deliberately short: this is the entry point, not another
  * wall of concatenated content.
  */
-export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductReport, generatedSlugs: Map<string, string>): string {
+export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductReport, generatedSlugs: Map<string, string>, extractedByUrl: Map<string, ExtractedPage>): string {
   return `<!doctype html>
 <html>
 <head>
@@ -68,7 +69,7 @@ export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductRep
 ${renderUnverifiedBanner(target)}
 <main>
 ${renderBreakdownTable(report)}
-${renderAccessibilitySection(report)}
+${renderAccessibilitySection(report, extractedByUrl)}
 <section class="pages">
 <h2>Pages</h2>
 ${pageLinksList(report, generatedSlugs)}
