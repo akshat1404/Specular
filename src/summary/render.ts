@@ -6,9 +6,9 @@ import type { ExtractedPage } from "../extractor/types.js";
 import { CATEGORY_COLORS, ACCESSIBILITY_COLOR, escapeHtml } from "../report/overlay.js";
 import type { RankedFinding } from "./rank.js";
 
-/** Fixed thumbnail viewport — small enough to stay a supporting visual, not a second overlay. */
-const THUMB_WIDTH = 220;
-const THUMB_HEIGHT = 140;
+/** Fixed thumbnail viewport — small enough to stay a supporting visual, not a second overlay. Exported so tests can compute expected crop positions without duplicating these constants. */
+export const THUMB_WIDTH = 220;
+export const THUMB_HEIGHT = 140;
 
 function colorFor(finding: RankedFinding): string {
   return finding.colorKey === "accessibility" ? ACCESSIBILITY_COLOR : CATEGORY_COLORS[finding.colorKey];
@@ -27,13 +27,21 @@ function colorFor(finding: RankedFinding): string {
  * position or no screenshot to crop from — a missing thumbnail is fine, a
  * blank/misleading one isn't.
  */
-function renderThumbnail(finding: RankedFinding, screenshotDataUri: string | undefined): string {
+/**
+ * The `<img>` offset that puts `position`'s center in the middle of the
+ * thumbnail viewport — extracted from `renderThumbnail` so a test can place
+ * a known source-image coordinate at a known thumbnail coordinate without
+ * re-deriving/guessing this formula itself.
+ */
+export function cropOffsetFor(position: { x: number; y: number; width: number; height: number }): { left: number; top: number } {
+  const centerX = position.x + position.width / 2;
+  const centerY = position.y + position.height / 2;
+  return { left: -(centerX - THUMB_WIDTH / 2), top: -(centerY - THUMB_HEIGHT / 2) };
+}
+
+export function renderThumbnail(finding: RankedFinding, screenshotDataUri: string | undefined): string {
   if (!finding.position || !screenshotDataUri) return "";
-  const { x, y, width, height } = finding.position;
-  const centerX = x + width / 2;
-  const centerY = y + height / 2;
-  const left = -(centerX - THUMB_WIDTH / 2);
-  const top = -(centerY - THUMB_HEIGHT / 2);
+  const { left, top } = cropOffsetFor(finding.position);
 
   return `<div class="thumb" style="border-color:${colorFor(finding)}">
   <div class="thumb-mask">
@@ -90,12 +98,29 @@ const STYLE = `
    * its own inner wrapper, not .thumb itself, so the border stays crisp —
    * mask-image would otherwise fade the border pixels out too, since the
    * default mask-origin is the border box.
+   *
+   * A first pass used a plain linear fade over the outer 14% of each edge
+   * (~31px/~20px on a 220x140 thumb) and looked broken on text specifically:
+   * pixel-verified against real captured pages that a typical text line's
+   * glyphs sit only a few px inside that 14% band, where a straight linear
+   * ramp is still >90% opaque — nowhere near enough to read as "faded" next
+   * to full-strength ink. The fix is two changes together, not one: the
+   * fade zone is widened to the outer 22% (so the *entire* height of a
+   * typical thumbnail-scale text line — not just its outermost couple of
+   * px — sits inside it), and front-loaded with an intermediate 40%-alpha
+   * stop close to the edge (10%/90%) so a glyph a few px in still gets a
+   * visible cut rather than needing to reach deep into the band before the
+   * ramp does anything. Verified directly against real captured text (not
+   * just a solid-color/shape proxy — the two react very differently, see
+   * render.test.ts): row-by-row pixel luminance before/after, and a >10x
+   * pixelated crop of the exact text strip, both show a real, substantial
+   * lightening, not just a mathematically-nonzero-but-invisible one.
    */
   .thumb-mask {
     width: 100%; height: 100%; position: relative;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 14%, black 86%, transparent), linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, rgba(0,0,0,0.4) 10%, black 22%, black 78%, rgba(0,0,0,0.4) 90%, transparent), linear-gradient(to bottom, transparent, rgba(0,0,0,0.4) 10%, black 22%, black 78%, rgba(0,0,0,0.4) 90%, transparent);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent, black 14%, black 86%, transparent), linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+    mask-image: linear-gradient(to right, transparent, rgba(0,0,0,0.4) 10%, black 22%, black 78%, rgba(0,0,0,0.4) 90%, transparent), linear-gradient(to bottom, transparent, rgba(0,0,0,0.4) 10%, black 22%, black 78%, rgba(0,0,0,0.4) 90%, transparent);
     mask-composite: intersect;
   }
   .thumb img { position: absolute; max-width: none; }
