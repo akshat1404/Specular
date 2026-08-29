@@ -94,7 +94,7 @@ describe("thumbnail crop mask on real text (not a solid-color proxy)", () => {
     const buf = await srcPage.screenshot();
     sourceDataUri = `data:image/png;base64,${buf.toString("base64")}`;
     await srcPage.close();
-  }, 30_000);
+  });
 
   afterAll(async () => {
     await browser.close();
@@ -135,7 +135,6 @@ describe("thumbnail crop mask on real text (not a solid-color proxy)", () => {
       // left real text pixels within it still reading as full-strength,
       // unfaded ink (see render.ts's mask-CSS comment).
       expect(nearEdgeDarkest).toBeGreaterThan(centeredDarkest + 25);
-    },
-    30_000
+    }
   );
 });
