@@ -35,7 +35,14 @@ ${rows.join("\n")}
  * detail view. Deliberately short: this is the entry point, not another
  * wall of concatenated content.
  */
-export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductReport, generatedSlugs: Map<string, string>, extractedByUrl: Map<string, ExtractedPage>): string {
+export function renderTargetOverviewHtml(
+  target: CrawlTarget,
+  report: ProductReport,
+  generatedSlugs: Map<string, string>,
+  extractedByUrl: Map<string, ExtractedPage>,
+  hasSummaryPdf = false
+): string {
+  const summaryPdfLink = hasSummaryPdf ? `<a href="summary.pdf">executive summary (PDF)</a>` : "";
   return `<!doctype html>
 <html>
 <head>
@@ -58,6 +65,8 @@ export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductRep
   section.pages ul { padding-left: 20px; }
   section.pages li { margin-bottom: 6px; font-size: 14px; }
   .empty { color: #999; font-style: italic; }
+  .pdf-link { margin-top: 12px; font-size: 13px; }
+  .pdf-link a { color: #7aa2f7; }
 </style>
 </head>
 <body>
@@ -65,6 +74,7 @@ export function renderTargetOverviewHtml(target: CrawlTarget, report: ProductRep
 <header>
 <h1>${escapeHtml(target.label)} (${escapeHtml(target.kind)})</h1>
 <div class="score">${scoreLine(report)}</div>
+${summaryPdfLink ? `<div class="pdf-link">${summaryPdfLink}</div>` : ""}
 </header>
 ${renderUnverifiedBanner(target)}
 <main>

@@ -51,6 +51,14 @@ export async function buildTargetSite(targetKey: string, adapter: TokenAdapter):
   const targetDir = path.join(SITE_REPORTS_ROOT, targetKey);
   mkdirSync(targetDir, { recursive: true });
 
+  // The executive-summary PDF (summaryPdf.ts) is a separate, opt-in step
+  // that not every target has run — copy it alongside the other site
+  // assets (same pattern as original.png/corrected.png below) only when
+  // one actually exists, rather than assuming or forcing generation here.
+  const summaryPdfAbsPath = path.join(REPORTS_ROOT, targetKey, "summary.pdf");
+  const hasSummaryPdf = existsSync(summaryPdfAbsPath);
+  if (hasSummaryPdf) copyFileSync(summaryPdfAbsPath, path.join(targetDir, "summary.pdf"));
+
   const generatedSlugs = new Map<string, string>();
   const extractedByUrl = new Map<string, ExtractedPage>();
   for (const pageReport of report.pages) {
@@ -77,7 +85,7 @@ export async function buildTargetSite(targetKey: string, adapter: TokenAdapter):
     generatedSlugs.set(pageReport.page, slug);
   }
 
-  writeFileSync(path.join(targetDir, "index.html"), renderTargetOverviewHtml(target, report, generatedSlugs, extractedByUrl), "utf-8");
+  writeFileSync(path.join(targetDir, "index.html"), renderTargetOverviewHtml(target, report, generatedSlugs, extractedByUrl, hasSummaryPdf), "utf-8");
   return { pagesBuilt: generatedSlugs.size };
 }
 
