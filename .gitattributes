@@ -1,0 +1,11 @@
+# Without this file, git falls back to its own per-commit text/binary
+# heuristic for every file, including PDFs and PNGs this project commits
+# under reports/ and docs/reports/. That heuristic can misclassify a binary
+# file as text (a PDF's structure is mostly ASCII operators around binary
+# compressed streams), and core.autocrlf then normalizes line endings
+# inside it — silently corrupting the binary content in a way lenient
+# tooling (qpdf --check, pdftoppm) can tolerate but GitHub's own blob
+# viewer does not. Declaring these explicitly removes the heuristic
+# entirely for these extensions, checkout and commit alike.
+*.pdf binary
+*.png binary
